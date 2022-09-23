@@ -318,35 +318,35 @@
 
   .progress {
     margin: 10px 15px 10px 0px;
-}
-
-.boxen {
-    background-color: #9dadbca1;
-    margin: 20px;
-    width: 100%;
-    padding: 25px;
-    border-radius: 32px;
   }
 
-.row {
-    padding: 10px 10px 10px 10px; 
-    width: 100%;
-    height: 100%;
-      }
+  .boxen {
+      background-color: #9dadbca1;
+      margin: 20px;
+      width: 100%;
+      padding: 25px;
+      border-radius: 32px;
+    }
 
-.boxencert {
-background-color: #ffffffa1;
-margin: 20px;
-width: 100%;
-height: 100%;
-padding: 25px;
-border-radius: 32px;
-vertical-align: middle;
-}
+  .row {
+      padding: 10px 10px 10px 10px; 
+      width: 100%;
+      height: 100%;
+        }
 
-.fa-cog {
-    color: black;
+  .boxencert {
+  background-color: #ffffffa1;
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  border-radius: 32px;
+  vertical-align: middle;
   }
+
+  .fa-cog {
+      color: black;
+    }
 
 
   .bi{
@@ -366,12 +366,12 @@ vertical-align: middle;
   }
 
 
-  ::selection {
-    background: #CC85AA; /* WebKit/Blink Browsers */
-  }
-  ::-moz-selection {
-    background: #CC85AA; /* Gecko Browsers */
-  }
+::selection {
+  background: #CC85AA; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #CC85AA; /* Gecko Browsers */
+}
 
   .boxencont {
     background-color: #ffffffa1;
@@ -404,8 +404,10 @@ vertical-align: middle;
     height: auto;
     padding: 25px;
     border-radius: 32px;
+    transition: background-color 2s ease-out 100ms
   }
 
   .btn:hover {
     background-color: #34CF9D;
   }
+
