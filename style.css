@@ -93,7 +93,6 @@ a:any-link {
 }
 
 .banner2 {
-  height: 100vh;
   background-color: #394855;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
