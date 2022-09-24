@@ -256,8 +256,7 @@ h6 {
   scroll-snap-align: start;
   background-color: #00B1B0;
   max-height: 100vh;
-/*     overflow-y: scroll;
-*/    
+    
 }
 
 .button {
@@ -358,7 +357,7 @@ vertical-align: middle;
   background-color: #ffffffa1;
   margin: 20px;
   width: 100%;
-  height: 40vh;
+  height: 35vh;
   max-height: 50vh;
   padding: 25px;
   border-radius: 32px;
@@ -468,7 +467,5 @@ color: #FFFFFF;
   border-radius: 32px;
   height: 77vh;
   transition: background-color 2s ease-out 100ms;
-  margin-bottom: 10px;
   background-color: #00507b4b;
-
 }
