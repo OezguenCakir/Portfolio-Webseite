@@ -357,8 +357,8 @@
     background-color: #ffffffa1;
     margin: 20px;
     width: 100%;
-    height: 50%;
-    max-height: 300px;
+    height: 45vh;
+    max-height: 50vh;
     padding: 25px;
     border-radius: 32px;
     vertical-align: middle;
@@ -367,10 +367,13 @@
 
 
 ::selection {
-  background: #CC85AA; /* WebKit/Blink Browsers */
+  background: #00A08E; /* WebKit/Blink Browsers */
+  color: #FFFFFF;
+
 }
 ::-moz-selection {
   background: #CC85AA; /* Gecko Browsers */
+  color: #FFFFFF;
 }
 
   .boxencont {
@@ -411,3 +414,14 @@
     background-color: #34CF9D;
   }
 
+  .boxmitscroll {
+    background-color: #ffffffa1;
+    margin: 20px;
+    width: 100%;
+    height: 70vh;
+    max-height: 70vh;
+    padding: 25px;
+    border-radius: 32px;
+    vertical-align: middle;
+    overflow-y: scroll;
+  }
