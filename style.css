@@ -385,6 +385,7 @@ background: #00A08E; /* WebKit/Blink Browsers */
 color: #FFFFFF;
 
 }
+
 ::-moz-selection {
 background: #CC85AA; /* Gecko Browsers */
 color: #FFFFFF;
@@ -397,7 +398,6 @@ color: #FFFFFF;
   padding: 25px;
   border-radius: 32px;
 }
-
 
 #tooltip {
   background-color: #333;
@@ -438,4 +438,37 @@ color: #FFFFFF;
   border-radius: 32px;
   vertical-align: middle;
   overflow-y: scroll;
+}
+
+.boxencont-address{
+  background-color: #ffffffa0;
+  margin: 0px;
+  height: auto;
+  padding: 25px;
+  border-radius: 32px;
+  transition: background-color 2s ease-out 100ms 
+}
+
+#foruni {
+  background-color: #00507b4b;
+  margin: 20px;
+  height: auto;
+  width: auto;
+  padding: 25px;
+  border-radius: 32px;
+  transition: background-color 2s ease-out 100ms  
+}
+
+.accordion-body {
+  font-size: 16px;
+}
+
+.tab-content {
+  background-color: #ffffffa0;
+  border-radius: 32px;
+  height: 77vh;
+  transition: background-color 2s ease-out 100ms;
+  margin-bottom: 10px;
+  background-color: #00507b4b;
+
 }
