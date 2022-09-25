@@ -326,7 +326,7 @@
                     <div class="row align-items-start" id="foruni">
                         <div class="col-3">
                             <div class="boxencont-address">
-                                <img width="100%" style="margin-bottom: 5px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/HHU_Logo.svg/640px-HHU_Logo.svg.png" alt="Logo der Heinrich-Heine-Universität">
+                                <img width="100%" height=44px style="margin-bottom: 5px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/HHU_Logo.svg/640px-HHU_Logo.svg.png" alt="Logo der Heinrich-Heine-Universität">
                                 <strong>Heinrich-Heine-Universität</strong><br>
                                 Universitätsstraße 1<br>
                                 40225 Düsseldorf<br>
@@ -335,7 +335,7 @@
                                 </a>
                             </div>
                             <div class="boxencont-address" style="margin-top: 15px;">
-                                <img width="100%" style="margin-bottom: 5px;" src="/pics/logo_gymnasium.png" alt="Logo der Heinrich-Heine-Universität">
+                                <img width="100%" style="margin-bottom: 5px; margin-top: 18px;" src="/pics/logo_gymnasium.png" alt="Logo der Heinrich-Heine-Universität">
                                 <strong>Gymnasium Horkesgath</strong><br>
                                 Horkesgath 33<br>
                                 47803 Krefeld<br>
@@ -344,8 +344,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-5">
-                            <div class="boxencont-address">
+                        <div class="col-4">
+                            <div class="boxencont-address" style="height: 219px;">
                                 <h5>Betriebswirtschaftslehre B.Sc.</h5>
                                 <p class="fw-light" style="margin-bottom: 8px;">Oktober 2017 – September 2021</p>
                                 <button id="button" aria-describedby="tooltip" class="btn btn-secondary" style="margin-bottom: 8px;">
@@ -358,7 +358,86 @@
                                     </a>
                                 </button>
                                 <div id="tooltip" role="tooltip">
-                                Weierleitung zu OneDrive, wo mein Lebenslauf hochgeladen ist
+                                Weierleitung zu OneDrive, wo mein Zeugnis hochgeladen ist
+                                <div id="arrow" data-popper-arrow></div>
+                                </div>
+
+                                <script src="https://unpkg.com/@popperjs/core@2"></script>
+                                <script>
+                                const button = document.querySelector('#button');
+                                const tooltip = document.querySelector('#tooltip');
+
+                                const popperInstance = Popper.createPopper(button, tooltip, {
+                                    placement: 'right',
+                                    modifiers: [
+                                    {
+                                        name: 'offset',
+                                        options: {
+                                        offset: [0, 8],
+                                        },
+                                    },
+                                    ],
+                                });
+
+                                function show() {
+                                    // Make the tooltip visible
+                                    tooltip.setAttribute('data-show', '');
+
+                                    // Enable the event listeners
+                                    popperInstance.setOptions((options) => ({
+                                    ...options,
+                                    modifiers: [
+                                        ...options.modifiers,
+                                        { name: 'eventListeners', enabled: true },
+                                    ],
+                                    }));
+
+                                    // Update its position
+                                    popperInstance.update();
+                                }
+
+                                function hide() {
+                                    // Hide the tooltip
+                                    tooltip.removeAttribute('data-show');
+
+                                    // Disable the event listeners
+                                    popperInstance.setOptions((options) => ({
+                                    ...options,
+                                    modifiers: [
+                                        ...options.modifiers,
+                                        { name: 'eventListeners', enabled: false },
+                                    ],
+                                    }));
+                                }
+
+                                const showEvents = ['mouseenter', 'focus'];
+                                const hideEvents = ['mouseleave', 'blur'];
+
+                                showEvents.forEach((event) => {
+                                    button.addEventListener(event, show);
+                                });
+
+                                hideEvents.forEach((event) => {
+                                    button.addEventListener(event, hide);
+                                });
+                                </script>
+                                <br>
+                                <p class="fw-light" style="margin-bottom: 8px; font-size: 15px;">Notendurchschnitt: 2,2</p>
+                            </div>
+                            <div class="boxencont-address" style="height: 219px; margin-top: 15px;">
+                                <h5>Abitur</h5>
+                                <p class="fw-light" style="margin-bottom: 8px;">Oktober 2017 – September 2021</p>
+                                <button id="button" aria-describedby="tooltip" class="btn btn-secondary" style="margin-bottom: 8px;">
+                                    <a href="mailto:oezguencakir@outlook.de" role="button" target="_blank" style="color: rgb(255, 255, 255);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                                            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                        </svg>
+                                        Zeugnis
+                                    </a>
+                                </button>
+                                <div id="tooltip" role="tooltip">
+                                Weierleitung zu OneDrive, wo mein Zeugnis hochgeladen ist
                                 <div id="arrow" data-popper-arrow></div>
                                 </div>
 
@@ -425,7 +504,7 @@
                                 <p class="fw-light" style="margin-bottom: 8px; font-size: 15px;">Notendurchschnitt: 2,2</p>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-5">
                             <div class="boxencont-address">
                                 <h5>FAQ</h>
                                 <div class="accordion" id="accordionExample">
