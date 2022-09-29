@@ -317,9 +317,7 @@ h6 {
   border-radius: 32px;
 }
 
-.progress {
-  margin: 10px 15px 10px 0px;
-}
+
 
 .boxen {
     background-color: #9dadbca1;
@@ -524,4 +522,44 @@ color: #FFFFFF;
 
 #tooltip[data-popper-placement^='right'] > #arrow {
   left: -4px;
+}
+
+.progress-title{
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 2px;
+  margin: 0 0 15px;
+}
+.progress{
+  margin: 10px 15px 10px 0px;
+  box-shadow: none;
+  overflow: visible;
+  position: relative;
+}
+.progress .progress-bar{
+  box-shadow: none;
+  border-radius: 0;
+  position: relative;
+  -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 3s;
+  animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 3s;
+}
+
+.progress:after,
+.progress .progress-bar:after,
+.progress .progress-value:after{
+  content: "";
+  border-left: 13px solid rgba(0,0,0,0.1);
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  position: absolute;
+  top: 0;
+  right: -13px;
+}
+
+@-webkit-keyframes animate-positive{
+  0%{ width: 0; }
+}
+@keyframes animate-positive{
+  0%{ width: 0; }
 }
