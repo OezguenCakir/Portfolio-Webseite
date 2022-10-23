@@ -92,8 +92,6 @@ a:any-link {
 }
 
 .banner2 {
-/*   height: auto;
- */  
   background-color: #394855;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
@@ -282,6 +280,7 @@ h6 {
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
+  max-width: 1100px;
 }
 
 
@@ -446,6 +445,7 @@ color: #FFFFFF;
   margin: 20px 20px 20px 20px;
   height: auto;
   width: auto;
+  max-width: 1100px;
   padding: 25px;
   border-radius: 32px;
   transition: background-color 2s ease-out 100ms  
@@ -537,8 +537,15 @@ color: #FFFFFF;
   box-shadow: none;
   border-radius: 0;
   position: relative;
-  -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 3s;
-  animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 3s;
+  /* -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 3s;
+  animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 3s; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .progress-animation {
+    animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 3s;
+    -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 3s;
+  }
 }
 
 .progress:after,
