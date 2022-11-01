@@ -417,10 +417,6 @@ color: #FFFFFF;
   transition: background-color 2s ease-out 100ms
 }
 
-.btn:hover {
-  background-color: #34CF9D;
-}
-
 .boxmitscroll {
   background-color: #ffffffa1;
   margin: 20px;
@@ -620,4 +616,12 @@ color: #FFFFFF;
 
 .tooltip.show p {
   text-align:left;
+}
+
+.language-radio {
+    position: fixed;
+    width: 100%;
+    padding: 50px;
+    align-self: center;
+    font-size: small;
 }

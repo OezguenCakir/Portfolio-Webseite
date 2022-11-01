@@ -37,6 +37,34 @@
                 });
             } );
         </script>
+        <script>
+            $( function() {
+              // run the currently selected effect
+              function runEffect() {
+                // get effect type from
+                var selectedEffect = "scale";
+           
+                // Most effect types need no options passed by default
+                var options = {};
+               
+           
+                // Run the effect
+                $( "body" ).hide( selectedEffect, options, 1000, callback );
+              };
+           
+              // Callback function to bring a hidden box back
+              function callback() {
+                setTimeout(function() {
+                  $( "body" ).removeAttr( "style" ).hide().fadeIn();
+                }, 10000000 );
+              };
+           
+              // Set effect from select menu value
+              $( "#buttonDEST" ).on( "click", function() {
+                runEffect();
+              });
+            } );
+        </script>
     </head>
    
     <body>
@@ -44,16 +72,21 @@
             <a href="#" class="logo-link w-nav-brand">
                 <h1 class="brand-text hvr-grow-rotate" href="#home">Özgün Cakir</h1>
             </a>
-            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 ">
-                <nav class="nav nav-pills flex-column">
-                    <a href="#home" class="nav-link ms-3 my-1">Start</a>
-                    <a href="#summary" class="nav-link ms-3 my-1">Zusammenfassung</a>
-                    <a href="#job" class="nav-link ms-3 my-1">Berufliche Laufbahn</a>
-                    <a href="#certificate" class="nav-link ms-3 my-1">Zertifikate</a>
-                    <a href="#educ" class="nav-link ms-3 my-1">Bildungsweg</a>
-                    <a href="#contact" class="nav-link ms-3 my-1">Kontakt</a>
-                </nav>
+            <nav class="nav nav-pills flex-column pe-4">
+                <a href="#home" class="nav-link ms-3 my-1">Start</a>
+                <a href="#summary" class="nav-link ms-3 my-1">Zusammenfassung</a>
+                <a href="#job" class="nav-link ms-3 my-1">Berufliche Laufbahn</a>
+                <a href="#certificate" class="nav-link ms-3 my-1">Zertifikate</a>
+                <a href="#educ" class="nav-link ms-3 my-1">Bildungsweg</a>
+                <a href="#contact" class="nav-link ms-3 my-1">Kontakt</a>
             </nav>
+            <div class="btn-group language-radio pe-auto" role="group" aria-label="Basic radio toggle button group" style="padding-top: 120px;">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-info" for="btnradio1">DE</label>
+                
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-info" for="btnradio2">EN</label>
+                </div>  
         </div>
         
         <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0" proximity-scroll-snapping>
@@ -75,6 +108,7 @@
                                     <br/>
                                     Data Analyst.
                                 </h1>
+                                <br/>
                                 <div class="hero-subheading hvr-bob">
                                     Data Analyst mit betriebswirtschaftlichem Hintergrund. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum.
                                 </div>
@@ -92,37 +126,37 @@
                 <div class="row align-items-start" id="foruni">
                     <div class="col-md-5">
                         <div class="boxen"><h4>Technische Fähigkeiten</h4>
-                            <div class="hvr-forward" style="width: 100%"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<p style='text-align:left'> Ich arbeite mit <strong>PowerQuery</strong> und komplexeren Funktionen.<br>Mit <strong>VBA</strong> habe ich nicht ausgiebig gearbeitet. Mit dem Makro-Rekorder, Google und etwas Zeit müsste aber auch dies gehen.<p>" data-bs-placement="right">
+                            <div class="hvr-forward" style="width: 100%"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<p style='text-align:left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum.<p>" data-bs-placement="right">
                                 <h5>Excel</h5>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>   
                             </div>
-                            <div class="hvr-forward" style="width: 100%"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<p style='text-align:left'> Ich arbeite mit <strong>PowerQuery</strong> und komplexeren Funktionen.<br>Mit <strong>VBA</strong> habe ich nicht ausgiebig gearbeitet. Mit dem Makro-Rekorder, Google und etwas Zeit müsste aber auch dies gehen.<p>" data-bs-placement="right">
+                            <div class="hvr-forward" style="width: 100%"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<p style='text-align:left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum.<p>" data-bs-placement="right">
                                 <h5>PowerBI</h5>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 85%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="hvr-forward" style="width: 100%"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<p style='text-align:left'> Ich arbeite mit <strong>PowerQuery</strong> und komplexeren Funktionen.<br>Mit <strong>VBA</strong> habe ich nicht ausgiebig gearbeitet. Mit dem Makro-Rekorder, Google und etwas Zeit müsste aber auch dies gehen.<p>" data-bs-placement="right">
+                            <div class="hvr-forward" style="width: 100%"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<p style='text-align:left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum.<p>" data-bs-placement="right">
                                 <h5>SQL</h5>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 70%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div> 
                             </div>
-                            <div class="hvr-forward" style="width: 100%"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<p style='text-align:left'> Ich arbeite mit <strong>PowerQuery</strong> und komplexeren Funktionen.<br>Mit <strong>VBA</strong> habe ich nicht ausgiebig gearbeitet. Mit dem Makro-Rekorder, Google und etwas Zeit müsste aber auch dies gehen.<p>" data-bs-placement="right">                           
+                            <div class="hvr-forward" style="width: 100%"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<p style='text-align:left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum.<p>" data-bs-placement="right">                           
                                 <h5>HTML & CSS</h5>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="hvr-forward" style="width: 100%"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<p style='text-align:left'> Ich arbeite mit <strong>PowerQuery</strong> und komplexeren Funktionen.<br>Mit <strong>VBA</strong> habe ich nicht ausgiebig gearbeitet. Mit dem Makro-Rekorder, Google und etwas Zeit müsste aber auch dies gehen.<p>" data-bs-placement="right">
+                            <div class="hvr-forward" style="width: 100%"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<p style='text-align:left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum.<p>" data-bs-placement="right">
                                 <h5>Python (Pandas)</h5>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 35%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="hvr-forward" style="width: 100%"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<p style='text-align:left'> Ich arbeite mit <strong>PowerQuery</strong> und komplexeren Funktionen.<br>Mit <strong>VBA</strong> habe ich nicht ausgiebig gearbeitet. Mit dem Makro-Rekorder, Google und etwas Zeit müsste aber auch dies gehen.<p>" data-bs-placement="right">
+                            <div class="hvr-forward" style="width: 100%"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<p style='text-align:left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum.<p>" data-bs-placement="right">
                                 <h5>R</h5>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 5%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
@@ -828,6 +862,9 @@
                     </div>        
                 </div>
                 <div class="foot">
+                    <button class="ui-state-default ui-corner-all btn btn-danger" id="buttonDEST" data-bs-toggle="tooltip" data-bs-title="Wie jeder gute Bösewicht habe ich einen Selbstzerstörungsknopf für diese Seite erstellt.">
+                        Selbstzerstörung
+                    </button>
                     <hr>
                     Copyright © 2022 Özgün Cakir Enterprises.
                 </div>
