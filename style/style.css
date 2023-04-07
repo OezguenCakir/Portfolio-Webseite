@@ -96,7 +96,7 @@ a:any-link {
 .banner {
 	min-height: 100vh;
 	background-color: #394855;
-	background-image: url("https://uploads-ssl.webflow.com/631b90490a8a2960c2955233/631dd81bf265cf5770c5a6c3_bg3.png");
+	background-image: url(/media/hintergrund.webp);
 	background-position: 100% 100%;
 	background-size: 750px;
 	background-repeat: no-repeat;
