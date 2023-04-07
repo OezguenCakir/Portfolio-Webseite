@@ -32,6 +32,15 @@ a:any-link {
 	background-color: #006e9d;
 }
 
+.content-nav {
+	margin: 0;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	width: 90%;
+	transform: translate(-50%, -50%)
+}
+
 .nav-link {
 	display: block;
 	padding: 15px 0px;
@@ -57,7 +66,7 @@ a:any-link {
 	text-transform: none;
 }
 
-.logo-link {
+.title {
 	display: block;
 	margin-top: 216px;
 	margin-bottom: 50px;
@@ -81,20 +90,17 @@ a:any-link {
 	-webkit-transition: opacity 200ms ease;
 	transition: opacity 200ms ease;
 	overflow: hidden;
+	background-color: #394855;
 }
 
 .banner {
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #394855;
 	background-image: url("https://uploads-ssl.webflow.com/631b90490a8a2960c2955233/631dd81bf265cf5770c5a6c3_bg3.png");
 	background-position: 100% 100%;
 	background-size: 750px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-}
-
-.banner2 {
-	background-color: #394855;
 }
 
 .content {
@@ -128,7 +134,13 @@ a:any-link {
 	-ms-grid-rows: auto auto;
 	grid-template-rows: auto auto;
 	text-align: center;
+	vertical-align: middle;	
+
+	align-items: center;
+	justify-content: center;
+	max-width: 1300px;
 }
+
 
 .hero-heading {
 	font-size: 37px;
@@ -209,7 +221,9 @@ h6 {
 	text-align: center;
 	background-color: #394855ba;
 	border-radius: 16px;
+	max-width: 1000px;
 }
+
 
 .logo-section {
 	margin-top: 40px;
@@ -220,29 +234,6 @@ h6 {
 	margin-left: auto;
 }
 
-#summary {
-	background-color: #007FA7;
-}
-
-#job {
-	background-color: #0090B1;
-}
-
-#educ {
-	background-color: #34CF9D;
-}
-
-#portfolio {
-	background-color: #9CE782;
-}
-
-#contact {
-	background-color: #F9F871;
-}
-
-#certificate {
-	background-color: #00B1B0;
-}
 
 .button {
 	display: inline-block;
@@ -259,8 +250,8 @@ h6 {
 }
 
 .seitentitel {
-	padding: 20px 20px 20px 20px;
-	margin: 25px;
+	padding: 20px;
+	margin: 40px 30px 25px;
 	text-align: center;
 	background-color: #00507b4b;
 	border-radius: 24px;
@@ -268,7 +259,8 @@ h6 {
 	line-height: 36px;
 	font-weight: 700;
 	color: #ffffff;
-	max-width: 1100px;
+	display: flex;
+	justify-content: center;
 }
 
 .seiteninhalte2 {
@@ -280,21 +272,7 @@ h6 {
 	border-radius: 32px;
 }
 
-.boxen {
-	background-color: #9dadbca1;
-	margin: 0px 0px 20px 0px;
-	padding: 25px;
-	border-radius: 32px;
-}
 
-.boxencert {
-	background-color: #ffffffa1;
-	margin: 20px;
-	width: 100%;
-	padding: 25px;
-	border-radius: 32px;
-	vertical-align: middle;
-}
 
 .fa-cog {
 	color: black;
@@ -328,13 +306,7 @@ h6 {
 	color: #FFFFFF;
 }
 
-.boxencont {
-	margin: 20px;
-	height: auto;
-	padding: 25px;
-	border-radius: 32px;
-	background-color: #CBD3DB74;
-}
+
 
 #tooltip {
 	background-color: #333;
@@ -344,39 +316,8 @@ h6 {
 	font-size: 13px;
 }
 
-.boxmitscroll {
-	background-color: #ffffffa1;
-	margin: 20px;
-	height: 70vh;
-	max-height: 70vh;
-	padding: 25px;
-	border-radius: 32px;
-	vertical-align: middle;
-	overflow-y: scroll;
-}
 
-.boxencont-address {
-	background-color: #ffffffa0;
-	margin: 0px;
-	padding: 25px;
-	border-radius: 32px;
-	transition: background-color 2s ease-out 100ms
-}
 
-#foruni {
-	background-color: #00507b4b;
-	margin: 20px 20px 20px 20px;
-	height: auto;
-	width: auto;
-	max-width: 1100px;
-	padding: 25px;
-	border-radius: 32px;
-	transition: background-color 2s ease-out 100ms
-}
-
-.accordion-body {
-	font-size: 16px;
-}
 
 .tab-pane {
 	background-color: #ffffffa0;
@@ -529,21 +470,17 @@ h6 {
 	}
 }
 
-.boxenslider {
-	background-color: #9dadbca1;
-	margin: 0px 0px 20px 0px;
-	width: 100%;
-	height: 80px;
-	padding: 25px;
-	border-radius: 32px;
-	overflow: hidden;
-}
+
 
 .backbox {
-	background-color: #00507b4b;
-	margin: 20px;
-	padding: 25px;
 	border-radius: 32px;
+	max-width: 1300px;
+	width: 100%;
+	box-sizing: border-box;
+	max-height: calc(100vh - 101px);
+	justify-content: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .foot {
@@ -557,10 +494,163 @@ h6 {
 	text-align: left;
 }
 
-.language-radio {
-	position: fixed;
+
+
+.boxen,
+.boxencont,
+.boxencont-address,
+.boxencert,
+.boxenslider,
+.boxcontainer-institution,
+.boxcontainer-video,
+.boxmitscroll {
+	border-radius: 32px;
+	padding: 25px;
+}
+
+
+.boxen {
+	background-color: #9dadbca1;
+	margin-bottom: 20px;
+}
+
+.boxencont-address {
+	background-color: #ffffffa0;
+	margin: 0px;
 	width: 100%;
-	padding: 50px;
-	align-self: center;
-	font-size: small;
+}
+
+.boxencert {
+	background-color: #ffffffa1;
+	margin: 20px;
+	
+}
+
+.boxenslider {
+	background-color: #9dadbca1;
+	margin: 0px 0px 20px 0px;
+	width: 100%;
+	height: 80px;
+	overflow: hidden;
+}
+
+.boxencont {
+	margin: 20px;
+	background-color: #CBD3DB74;
+}
+
+.boxmitscroll {
+	background-color: #ffffffa1;
+	margin: 20px;
+	
+	vertical-align: middle;
+}
+
+.boxcontainer-institution{
+	margin-bottom: 0%;
+	color: #fff;
+}
+
+.boxcontainer-video {
+	margin: 20px;
+	padding: 20px;
+	background-color: #ffffffa0;
+}
+
+
+
+.seiteninhalte {
+	background-color: #00507b4b;
+	margin: 20px;
+	padding: 25px;
+	height: auto;
+	width: auto;
+	max-width: 1300px;
+	border-radius: 32px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+	border-radius: 32px;
+	margin: 20px 0px;
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+
+@media (max-width: 1000px) {
+	.left-navigation {
+		display:none;
+		visibility: collapse;
+		width: 0px;
+	}
+	.hero-subheading {
+		margin: 20px 10px 25px 10px;
+	}
+	.projects {
+		width: 100%;
+	}
+	.boxcontainer-video {
+		margin: 0px;
+		margin-bottom: 15px;
+		background-color: #ffffffa0;
+	}
+	.boxcontainer-institution {
+		padding-top: 5px;
+	}
+	.hero-heading {
+		background-color: #394855ba;
+		border-radius: 32px;
+		padding: 5px;
+	}
+}
+
+@media (max-width: 1000px) {
+	body {
+		padding-left: 0px !important;
+		margin: 0px;
+		color: #2c4373;
+		background-color: #2c4373;
+	}
+}
+
+
+
+.institution-logo {
+	margin-bottom: 10px;
+}
+ 
+.accordion {
+	margin-top: 10px;
+}
+
+.accordion-body {
+	text-align: left;
+	font-size: 16px;
+}
+
+.darker-link {
+	color: #004f7a;
+}
+
+
+.hvr-shrink,
+.hvr-forward {
+	width: 100%;
+}
+
+
+#pills-tabContent.tab-content {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	box-sizing: border-box;
 }
