@@ -245,13 +245,7 @@ h6{
     background:#cc85aa;
     color:#fff
 }
-#tooltip{
-    background-color:#333;
-    color:#fff;
-    padding:5px 10px;
-    border-radius:4px;
-    font-size:13px
-}
+
 .tab-pane{
     background-color:#ffffffa0;
     border-radius:32px;
@@ -259,25 +253,7 @@ h6{
     transition:background-color 2s ease-out .1s;
     background-color:#00507b4b
 }
-#tooltip{
-    background:#394855;
-    color:#fff;
-    padding:4px 8px;
-    font-size:13px;
-    border-radius:4px
-}
-#tooltip{
-    background:#394855;
-    color:#fff;
-    padding:4px 8px;
-    width:15%;
-    font-size:13px;
-    border-radius:4px;
-    display:none
-}
-#tooltip[data-show]{
-    display:inline
-}
+
 .progress-title{
     font-size:18px;
     font-weight:700;
@@ -345,9 +321,7 @@ h6{
     font-size:small;
     color:#394855
 }
-.tooltip.show p{
-    text-align:left
-}
+
 .boxcontainer-institution,.boxcontainer-video,.boxen,.boxencert,.boxencont,.boxencont-address,.boxmitscroll{
     border-radius:32px;
     padding:25px
@@ -429,6 +403,18 @@ h6{
         border-radius:32px;
         padding:5px
     }
+    .textbox {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .textbox-innen {
+        margin: 1px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .title-job {
+        text-align: center;
+    }
 }
 @media (max-width:1000px){
     body{
@@ -455,4 +441,18 @@ h6{
     overflow-y:scroll;
     overflow-x:hidden;
     box-sizing:border-box
+}
+
+
+
+
+.tooltip{
+    background:#394855;
+    color:whitesmoke;
+    border-radius:32px;
+    width:15%;
+}
+.tooltip.show {
+    text-align:left;
+    padding: 15px;
 }
