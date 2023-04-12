@@ -298,8 +298,6 @@ h6{
     box-sizing:border-box;
     max-height:calc(100vh - 101px);
     justify-content:center;
-    overflow-y:scroll;
-    overflow-x:hidden
 }
 .foot{
     text-align:center;
@@ -400,6 +398,10 @@ h6{
     }
     .title-job {
         text-align: center;
+    }
+    .backbox {
+        overflow-y:scroll;
+        overflow-x:hidden
     }
     body{
         padding-left:0!important;
