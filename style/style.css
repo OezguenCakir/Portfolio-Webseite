@@ -431,11 +431,6 @@ h6{
 .hvr-forward,.hvr-shrink{
     width:100%
 }
-#pills-tabContent.tab-content{
-    overflow-y:scroll;
-    overflow-x:hidden;
-    box-sizing:border-box
-}
 .tooltip{
     background:#394855;
     color:whitesmoke;
