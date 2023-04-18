@@ -21,17 +21,23 @@
 	</head>
 	<body>
 		<div class="left-navigation" data-collapse="medium" data-animation="default" data-duration="400" data-no-scroll="1" data-easing="ease" data-easing2="ease" role="banner">
-			<div class="content-nav">
+			<div rows class="content-nav">
 				<a href="#" class="title"><h1 class="name hvr-grow-rotate" href="#home">Özgün Cakir</h1></a>
 				<nav class="nav nav-pills flex-column">
 					<a href="#home" class="nav-link my-1">Start</a>
-					<a href="#summary" class="nav-link my-1">Zusammenfassung</a>
-					<a href="#job" class="nav-link my-1">Berufliche Laufbahn</a>
-					<a href="#certificate" class="nav-link my-1">Zertifikate</a>
-					<a href="#educ" class="nav-link my-1">Bildungsweg</a>
+					<a href="#summary" id="summ" class="nav-link my-1">Zusammenfassung</a>
+					<a href="#job" id="jobs" class="nav-link my-1">Berufliche Laufbahn</a>
+					<a href="#certificate" id="certification" class="nav-link my-1">Zertifikate</a>
+					<a href="#educ" id="education" class="nav-link my-1">Bildungsweg</a>
 					<a href="#portfolio" class="nav-link my-1">Portfolio</a>
-					<a href="#contact" class="nav-link my-1">Kontakt</a>
+					<a href="#contact" id="contactMe" class="nav-link my-1">Kontakt</a>
 				</nav>
+			</div>
+			<div>
+				<div class="language-switch d-flex align-items-end">
+					<a id="langDE" class="language-toggle flex-fill" href="#de" onclick="setTimeout(function(){location.reload();}, 50);">DE</a>
+					<a id="langEN" class="language-toggle flex-fill" href="#en" onclick="setTimeout(function(){location.reload();}, 50);">EN</a>
+				</div>
 			</div>
 		</div>
 		<div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0" proximity-scroll-snapping>
@@ -44,8 +50,9 @@
 							</div>
 						</div>
 						<div class="w-col w-col-8">
-							<h1 class="hero-heading hvr-pulse">Hallo, ich bin Özgün.<br/>Data Analyst.</h1><br/>
-							<div class="hero-subheading hvr-bob">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum.</div>
+							<h1 id="welcome" class="hero-heading hvr-pulse">Hallo, ich bin Özgün.<br>Data Analyst.</h1>
+							<br/>
+							<div id="aboutMe" class="hero-subheading hvr-bob">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum.</div>
 						</div>
 					</div>
 				</div>
@@ -56,7 +63,7 @@
 					<div class="row align-items-start">
 						<div class="col-md-5">
 							<div class="boxen">
-								<h4>Technische Fähigkeiten</h4>
+								<h4 id="techSkills">Technische Fähigkeiten</h4>
 								<div class="hvr-forward"  data-bs-toggle="tooltip" data-bs-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-bs-placement="right">
 									<h5>Excel</h5>
 									<div class="progress"><div class="progress-bar" aria-label="Excel" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
@@ -79,7 +86,7 @@
 								</div>
 							</div>
 							<div class="boxen" data-bs-toggle="tooltip" data-bs-title="Diese Adressen existieren tatsächlich und sind erreichbar" data-bs-placement="right">
-								<h6>Schreibe mir an eine meiner E-Mail-Adressen:</h6>
+								<h6 id="MailList">Schreibe mir an eine meiner E-Mail-Adressen:</h6>
 								<a href="mailto:kontakt@özgüncakir.de" class="typewrite" data-period="2000" data-type='[ "kontakt@özgüncakir.de", "fanpost@özgüncakir.de", "liebesbriefe@özgüncakir.de" ]' style="color: #212529;"><span class="wrap"></span></a>
 							</div>
 						</div>
@@ -518,7 +525,7 @@
 					</div>
 				</div>
 				<div class="foot">
-					<button class="ui-state-default ui-corner-all btn btn-danger" id="buttonDEST" data-bs-toggle="tooltip" data-bs-title="Wie jeder gute Bösewicht habe ich einen Selbstzerstörungsknopf für diese Seite erstellt.">
+					<button id="selfDestruction" class="ui-state-default ui-corner-all btn btn-danger" id="buttonDEST" data-bs-toggle="tooltip" data-bs-title="Wie jeder gute Bösewicht habe ich einen Selbstzerstörungsknopf für diese Seite erstellt.">
 					Selbstzerstörung
 					</button>
 					<hr>Copyright © 2023 Özgün Cakir Enterprises.
@@ -529,5 +536,6 @@
 		<script src="scripts/typewriter_effect.js" type="text/javascript"></script>
 		<script src="scripts/progress_bar_animation.js" type="text/javascript"></script>
 		<script src="scripts/selfdestruction.js" type="text/javascript"></script>
+		<script src="scripts/content.js" type="text/javascript"></script>
 	</body>
 </html>
