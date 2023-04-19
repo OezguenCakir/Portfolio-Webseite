@@ -20,7 +20,7 @@ $( function() {
     };
   
     // Set effect from select menu value
-    $( "#buttonDEST" ).on( "click", function() {
+    $( "#selfDestruction" ).on( "click", function() {
       runEffect();
     });
   } );
