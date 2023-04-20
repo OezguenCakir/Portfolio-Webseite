@@ -338,8 +338,8 @@ h6{
     background-color:#ffffffa0
 }
 .seiteninhalte{
-    background-color:#00507b4b;
-    padding:25px;
+    /* background-color:#00507b4b; */
+    padding:10px;
     height:auto;
     width:auto;
     max-width:1300px;
@@ -379,6 +379,7 @@ h6{
     background:#394855;
     color:whitesmoke;
     border-radius:32px;
+    margin: 5px;
     width:15%;
 }
 .tooltip.show {
