@@ -15,11 +15,10 @@
 		<script src="https://unpkg.com/@popperjs/core@2"></script>
 		<script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	</head>
-	<body>
+	<body>	
 		<div class="left-navigation" data-collapse="medium" data-animation="default" data-duration="400" data-no-scroll="1" data-easing="ease" data-easing2="ease" role="banner">
 			<div rows class="content-nav">
 				<a href="#" class="title"><h1 class="name hvr-grow-rotate" href="#home">Özgün Cakir</h1></a>
@@ -46,7 +45,7 @@
 					<div>
 						<div class="w-col w-col-4">
 							<div class="logo-section hvr-grow">
-								<img src="media/profilbild.webp" sizes="(max-width: 767px) 300px, (max-width: 991px) 30vw, 22vw" width="300" alt="Profilbild von mir" class="image"/>
+								<img src="media/profilbild.webp" sizes="(max-width: 767px) 300px, (max-width: 991px) 30vw, 22vw" width="300" alt="Profilbild von mir" class="image" draggable="false">
 							</div>
 						</div>
 						<div class="w-col w-col-8">
@@ -62,36 +61,36 @@
 				<div class="seiteninhalte">
 					<div class="row align-items-start" >
 						<div class="col-md-5">
-							<div class="boxen">
+							<div class="boxen hvr-shrink" data-bs-toggle="modal" data-bs-target="#exampleModal">
 								<h4 id="techSkills">Technische Fähigkeiten</h4>
-								<div class="hvr-forward"  data-bs-toggle="tooltip" data-bs-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-bs-placement="right">
+								<div>
 									<h5>Excel</h5>
 									<div class="progress"><div class="progress-bar" aria-label="Excel" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
 								</div>
-								<div class="hvr-forward" data-bs-toggle="tooltip" data-bs-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum." data-bs-placement="right">
+								<div>
 									<h5>PowerBI</h5>
 									<div class="progress"><div class="progress-bar" aria-label="PowerBI" role="progressbar" style="width: 85%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
 								</div>
-								<div class="hvr-forward"  data-bs-toggle="tooltip" data-bs-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum." data-bs-placement="right">
+								<div>
 									<h5>SQL</h5>
 									<div class="progress"><div class="progress-bar" aria-label="SQL" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div>
 								</div>
-								<div class="hvr-forward"  data-bs-toggle="tooltip" data-bs-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum." data-bs-placement="right">
+								<div>
 									<h5>Python</h5>
 									<div class="progress"><div class="progress-bar" aria-label="Python" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div></div>
 								</div>
-								<div class="hvr-forward"  data-bs-toggle="tooltip" data-bs-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor eu augue ut lectus arcu bibendum." data-bs-placement="right">
+								<div>
 									<h5>HTML & CSS</h5>
 									<div class="progress"><div class="progress-bar" aria-label="HTML & CSS" role="progressbar" style="width: 35%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div></div>
 								</div>
 							</div>
-							<div class="boxen bottom" data-bs-toggle="tooltip" data-bs-title="Diese Adressen existieren tatsächlich und sind erreichbar" data-bs-placement="right">
+							<div class="boxen bottom hvr-shrink">
 								<h6 id="MailList">Schreibe mir an eine meiner E-Mail-Adressen:</h6>
 								<a href="mailto:kontakt@özgüncakir.de" class="typewrite" data-period="2000" data-type='[ "kontakt@özgüncakir.de", "fanpost@özgüncakir.de", "liebesbriefe@özgüncakir.de" ]' style="color: #212529;"><span class="wrap"></span></a>
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="boxen">
+							<div class="boxen hvr-shrink">
 								<h4>Soft-Skills</h4>
 								<h5>Humor</h5>
 								<div class="progress"><div class="progress-bar" aria-label="Humor" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
@@ -100,7 +99,7 @@
 								<h5>Tipp-Geschwindigkeit</h5>
 								<div class="progress"><div class="progress-bar" aria-label="Tipp-Geschwindigkeit" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div></div>
 							</div>
-							<div class="boxen bottom">
+							<div class="boxen bottom hvr-shrink">
 								<h4>Sprachen</h4>
 								<h5>Deutsch</h5>
 								<div class="progress"><div class="progress-bar" aria-label="Deutsch" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
@@ -111,22 +110,30 @@
 							</div>
 						</div>
 						<div class="col-md-3">
-							<div class="boxen hvr-shrink text-center">
-								<h4>Berufserfahrung</h4>
-								<h5>1 Jahr</h5>
-							</div>
-							<div class="boxen hvr-shrink text-center">
-								<h4>Studium</h4>
-								<h5>BWL B.Sc.</h5>
-							</div>
-							<div class="boxen bottom hvr-shrink">
-								<h4>Zertifikate</h4>
-								<ul class="list-group-flush">
-									<li><strong>DataCamp</strong> - Data Analyst Professional</li>
-									<li><strong>ExcelHero</strong> - Excel Kurs Komplettpaket</li>
-									<li><strong>Google</strong> - Data Analytics Professional</li>
-								</ul>
-							</div>
+						<div class="boxen hvr-shrink text-center">
+							<h4>Berufserfahrung</h4>
+							<h5>1 Jahr</h5>
+						</div>
+						<div class="boxen hvr-shrink text-center">
+							<h4>Studium</h4>
+							<h5>BWL B.Sc.</h5>
+						</div>
+						<div class="boxen bottom hvr-shrink">
+							<h4>Zertifikate</h4>
+							<ul class="list-group-flush">
+								<li><strong>DataCamp</strong> - Data Analyst Professional</li>
+								<li><strong>ExcelHero</strong> - Excel Kurs Komplettpaket</li>
+								<li><strong>Google</strong> - Data Analytics Professional</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" style="vertical-align: middle;">
+						<div class="boxen popup white">
+						  	<h5 id="exampleModalLabel">Technische Fähigkeiten</h5>
+							Hi das ist nur ein Wenig Text.
 						</div>
 					</div>
 				</div>
@@ -134,58 +141,51 @@
 			<div id="job" class="seite hintergrundfarbe-2">
 				<div class="seitentitel">Berufliche Laufbahn</div>
 				<div class="seiteninhalte">
-					<div class="row align-items-start">
-						<div class="col-md-3">
-							<div class="boxen vordergrund-farbe white-text">
-								<img class="institution-logo"  height=60px src="media/axa_logo.webp" alt="Logo von AXA"><br>
-								<strong>AXA</strong><br>Colonia-Allee 10-20<br>51067 Köln<br><a href="tel:004922114841001">+49 221 14841001</a>
+					<div class="col align-items-start">
+						<div class="row align-items-start">
+							<div class="col-md-3">
+								<div class="boxen vordergrund-farbe white-text">
+									<img class="institution-logo"  height=60px src="media/axa_logo.webp" alt="Logo von AXA" draggable="false"><br>
+									<strong>AXA</strong><br>Colonia-Allee 10-20<br>51067 Köln<br><a href="tel:004922114841001">+49 221 14841001</a>
+								</div>
 							</div>
-						</div>
-						<div class="col-md-9">
-							<div class="boxen light-white bottom">
-								<h5 class="title-job">Data Analyst</h5>
-								<p class="fw-light title-job subtitle">Juli 2022 - heute</p>
-								<ul>
-									<li>Controlling und Analyse relevanter KPIs im Bereich Schaden sowie Weiterentwicklung bestehenden Kennzahlensystems in Dimensionen Qualität, Schadenaufwand und Produktivität</li>
-									<li>Konzeption und Umsetzung datenbasierten Projekten für Ressort Schaden/Leistung mit anderen Fachbereichen innerhalb des Schaden- und Leistungsbereichs</li>
-									<li>Aufbau und Betreuung von Dashboards</li>
-									<li>regelmäßigen Analysen für die strategischen und operativen Bereiche im Ressort Schaden</li>
-									<li>Ad-Hoc Kennzahlenanalysen in selbstständiger Abstimmung mit Stakeholdern der Fachbereiche</li>
-									<li>Vorantreiben und Vertreten selbst entwickelter Themen gegenüber Stakeholdern, meist Führungskräfte verschiedener Ressorts, dem Data Innovation Lab und Konzernstrategie</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="seiteninhalte">
-					<div class="row align-items-start" style="width: 100%; padding: 0px;">
-						<div class="col-md-3">
-							<div class="boxen vordergrund-farbe white-text">
-								<img class="institution-logo" height=60px src="media/henkel_logo.webp" alt="Logo von Henkel"><br>
-								<strong>Henkel</strong><br>Henkelstraße 67<br>40589 Düsseldorf<br><a href="tel:00492117970">+49 211 7970</a>
-							</div>
-						</div>
-						<div class="col-md-9">
-							<div class="boxen light-white bottom" style="width: 100%;">
-								<h5 class="title-job">Data Entry (Praktikum)</h5>
-								<p class="fw-light title-job subtitle">Dezember 2021 - Juni 2022</p>
-								<ul>
-									<li>Selbstständige Leitung eines Projektes, um Kunden-Stammdaten-Qualität zu erhöhen</li>
+							<div class="col-md-9">
+								<div class="boxen light-white">
+									<span class="h5 title-job">Data Analyst</span>
+									<span class="badge hintergrundfarbe-2">Normalarbeitsverhältnis</span>
+									<p class="fw-light title-job subtitle">Juli 2022 - heute</p>
 									<ul>
-										<li>Erhebung von Daten zu Ansprechpartnern der Kunden mit SAP-ERP und weiteren Quellen</li>
-										<li>Datenaufbereitung für Upload in SAP Service Cloud und Einführung von Salesforce CRM</li>
-										<li>Arbeit mit Excel, inkl. erweiterte Funktionen, wie dem Datenmodell</li>
-										<li>Team-übergreifende Arbeit im Customer Service DACH in Sparte Adhesive Technologies</li>
-										<li>Intensive Kommunikation mit jedem einzelnen Customer-Service-Mitarbeiter</li>
+										<li>Controlling und Analyse relevanter KPIs im Bereich Schaden sowie Weiterentwicklung bestehenden Kennzahlensystems in Dimensionen Qualität, Schadenaufwand und Produktivität</li>
+										<li>Konzeption und Umsetzung datenbasierten Projekten für Ressort Schaden/Leistung mit anderen Fachbereichen innerhalb des Schaden- und Leistungsbereichs</li>
+										<li>Aufbau und Betreuung von Dashboards</li>
+										<li>regelmäßigen Analysen für die strategischen und operativen Bereiche im Ressort Schaden</li>
+										<li>Ad-Hoc Kennzahlenanalysen in selbstständiger Abstimmung mit Stakeholdern der Fachbereiche</li>
+										<li>Vorantreiben und Vertreten selbst entwickelter Themen gegenüber Stakeholdern, meist Führungskräfte verschiedener Ressorts, dem Data Innovation Lab und Konzernstrategie</li>
 									</ul>
-									<li>Unterstützung der Abteilung im Tagesgeschäft</li>
+								</div>
+							</div>
+						</div>
+						<div class="row align-items-start">
+							<div class="col-md-3">
+								<div class="boxen vordergrund-farbe white-text bottom">
+									<img class="institution-logo" height=60px src="media/henkel_logo.webp" alt="Logo von Henkel" draggable="false"><br>
+									<strong>Henkel</strong><br>Henkelstraße 67<br>40589 Düsseldorf<br><a href="tel:00492117970">+49 211 7970</a>
+								</div>
+							</div>
+							<div class="col-md-9">
+								<div class="boxen light-white bottom">
+									<span class="h5 title-job">Data Entry</span>
+									<span class="badge hintergrundfarbe-3">Praktikum</span>
+									<p class="fw-light title-job subtitle">Dezember 2021 - Juni 2022</p>
 									<ul>
-										<li>Unterstützung beim Auftrags-Management mit SAP-ERP</li>
-										<li>Hilfe bei Themen rund um Excel</li>
+										<li>Selbstständige Leitung eines Projektes, um Kunden-Stammdaten-Qualität zu erhöhen</li>
+										<li>Konzeption und Umsetzung datenbasierten Projekten für Ressort Schaden/Leistung mit anderen Fachbereichen innerhalb des Schaden- und Leistungsbereichs</li>
+										<li>Aufbau und Betreuung von Dashboards</li>
+										<li>regelmäßigen Analysen für die strategischen und operativen Bereiche im Ressort Schaden</li>
+										<li>Ad-Hoc Kennzahlenanalysen in selbstständiger Abstimmung mit Stakeholdern der Fachbereiche</li>
+										<li>Eintrag als Talent im Career Track Program für Praktikanten</li>
 									</ul>
-									<li>Eintrag als Talent im Career Track Program für Praktikanten</li>
-									
-								</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -321,79 +321,40 @@
 			<div id="educ" class="seite hintergrundfarbe-4">
 				<div class="seitentitel">Bildungsweg</div>
 				<div class="seiteninhalte">
-					<div class="row align-items-start">
-						<div class="col-md-8">
-							<div class="row align-items-start">
-								<div class="col-md-4">
-									<div class="boxen vordergrund-farbe white-text title-job">
-										<img class="institution-logo" width="100%" src="media/hhu_logo.webp" alt="Logo der Heinrich-Heine-Universität">
-										<strong>Heinrich-Heine-Universität</strong><br>Universitätsstraße 1<br>40225 Düsseldorf<br><a href="tel:00492118111118">+49 211 8111118</a>
-									</div>
-								</div>
-								<div class="col-md-8">
-									<div class="boxencont-address">
-										<h5>Betriebswirtschaftslehre B.Sc.</h5>
-										<p class="fw-light">Oktober 2017 – September 2021 <br> Notendurchschnitt: 2,2</p>
-									</div>
+					<div class="col align-items-start">
+						<div class="row align-items-start">
+							<div class="col-md-3">
+								<div class="boxen vordergrund-farbe white-text">
+									<img class="institution-logo"  width="100%" src="media/hhu_logo.webp" alt="Logo von der HHU" draggable="false"><br>
+									<strong>Heinrich-Heine-Universität</strong><br>
+									Universitätsstraße 1<br>
+									40225 Düsseldorf<br>
+									<a href="tel:00492118111118">+49 211 8111118</a>
 								</div>
 							</div>
-							<div class="row align-items-start">
-								<div class="col-md-4">
-									<div class="boxen vordergrund-farbe white-text title-job">
-										<img class="institution-logo" width="100%" src="media/horkesgath_gymnasium.webp" alt="Logo der Heinrich-Heine-Universität">
-										<strong>Gymnasium Horkesgath</strong><br>Horkesgath 33<br>47803 Krefeld<br><a href="tel:00492118111118">+49 2151 878850</a>
-									</div>
-								</div>
-								<div class="col-md-8">
-									<div class="boxencont-address">
-										<h5>Abitur</h5>
-										<p class="fw-light">Oktober 2017 – September 2021 <br> Notendurchschnitt: 1,6</p>
-									</div>
+							<div class="col-md-9">
+								<div class="boxen light-white">
+									<span class="h5 title-job">Betriebswirtschaftslehre B.Sc.</span>
+									<p class="fw-light title-job subtitle">Oktober 2017 – September 2021</p>
+									<ul><li>Notendurchschnitt: 2,2</li></ul>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="boxencont-address">
-								<h5>FAQ</h5>
-								<div class="accordion" id="accordionExample">
-									<div class="accordion-item">
-										<h2 class="accordion-header" id="headingOne">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-											Werde ich noch einen Master absolvieren?
-											</button>
-										</h2>
-										<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-											<div class="accordion-body">
-												<strong>Nein, vermutlich nicht.</strong> 
-												<br>Ich glaube, dass ich mich beruflich, durch Online-Kurse und eigene Projekte wie dieses, besser weiterentwickeln kann, als durch ein weiteres Studium. 
-												<br>Außerdem ist ein ausgeglichener Arbeitsalltag besser für meine Zufriedenheit, als ein Studienalltag.
-											</div>
-										</div>
-									</div>
-									<div class="accordion-item">
-										<h2 class="accordion-header" id="headingTwo">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-												Wie habe ich mein Studium ausgerichtet?
-											</button>
-										</h2>
-										<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-											<div class="accordion-body">
-												<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-											</div>
-										</div>
-									</div>
-									<div class="accordion-item">
-										<h2 class="accordion-header" id="headingThree">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-												Warum habe ich mich für mein Studium entschieden?
-											</button>
-										</h2>
-										<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-											<div class="accordion-body">
-												<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to ffd each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-											</div>
-										</div>
-									</div>
+						<div class="row align-items-start">
+							<div class="col-md-3">
+								<div class="boxen vordergrund-farbe white-text bottom">
+									<img class="institution-logo" width="100%" src="media/horkesgath_gymnasium.webp" alt="Logo von Henkel" draggable="false"><br>
+									<strong>Gymnasium Horkesgath</strong><br>
+									Horkesgath 33<br>
+									47803 Krefeld<br>
+									<a href="tel:00492151878850">+49 2151 878850</a>
+								</div>
+							</div>
+							<div class="col-md-9">
+								<div class="boxen light-white bottom">
+									<span class="h5 title-job">Abitur</span>
+									<p class="fw-light title-job subtitle">Oktober 2017 – September 2021</p>
+									<ul><li>Notendurchschnitt: 1,6</li></ul>
 								</div>
 							</div>
 						</div>
@@ -405,18 +366,18 @@
 				<div class="seiteninhalte">
 					<div class="row">
 						<div class="col-md-6">
-							<div class="boxen light-white bottom-on-mobile">
+							<div class="boxen white bottom-on-mobile">
 								<h4>Meine Webseite</h4>
-								<video width=100% height=100% autoplay loop muted playsinline class="fill">
+								<video width=100% height=100% autoplay loop muted playsinline class="fill hvr-shrink">
 									<source src="media/meine_seite.mp4" type="video/mp4">
 								</video>
 								Vielleicht ein wenig rekursiv, aber die ganze Arbeit soll sich ja lohnen. Web-Developer werde ich wohl nicht, aber das Ganze hat doch Spaß gemacht, Data Analytics aber halt deutlich mehr.
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="boxen light-white bottom-on-mobile">
+							<div class="boxen white bottom-on-mobile">
 								<h4>Chess.com Profilauswertung</h4>
-								<video width=100% height=100% autoplay loop muted playsinline class="fill">
+								<video width=100% height=100% autoplay loop muted playsinline class="fill hvr-shrink">
 									<source src="media/schach_streamlit.mp4" type="video/mp4">
 								</video>
 								Auf
@@ -425,9 +386,9 @@
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="boxen light-white bottom">
+							<div class="boxen white bottom">
 								<h4>Automatische Bild-Zuschneidung</h4>
-								<video width=100% height=100% autoplay loop muted playsinline class="fill">
+								<video width=100% height=100% autoplay loop muted playsinline class="fill hvr-shrink">
 									<source src="media/autoimgcrop.mp4" type="video/mp4">
 								</video>
 								Du hast transparente Bilder und willst diese auf das Wesentlich zuschneiden und den leeren Rand entfernen? Dann bitte
@@ -441,14 +402,14 @@
 			<div id="contact" class="seite hintergrundfarbe-6">
 				<div class="seitentitel">Kontakt</div>
 				<div class="seiteninhalte">
-					<div class="row align-items-start">
+				  <div class="row align-items-start">
 						<div class="col-md-6">
-							<div class="boxen pro-green">
+							<div class="boxen pro-green hvr-shrink">
 								<div class="hvr-wobble-vertical">
 									<h4>Pro</h4>
 									<ul class="list-unstyled">
 										<li class="list-group-item">
-											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill=#007B57 class="bi bi-check-circle-fill" viewBox="0 0 16 16" style="margin: 10px;"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+													<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill=#007B57 class="bi bi-check-circle-fill" viewBox="0 0 16 16" style="margin: 10px;"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
 											Highperformer par excellence
 										</li>
 										<li class="list-group-item">
@@ -462,7 +423,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="boxen bottom con-red">
+							<div class="boxen bottom con-red hvr-shrink">
 								<div class="hvr-wobble-horizontal">
 									<h4>Contra</h4>
 									<ul class="list-unstyled">
@@ -484,22 +445,22 @@
 						</div>
 						<div class="col-md-6">
 							<div class="row align-items-start">
-								<div class="col-md-6">
-									<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_yMpiqXia1k.json" style="height: 100%; margin: 20px; padding: 25px;" background="transparent"  speed="1" loop  autoplay></lottie-player>
-								</div>
-								<div class="col-md-6">
-									<div class="boxen light-white">
-										<div class="mb-3">
+								<div class="row align-items-start transparent transparent-boxen bottom">
+									<div class="col-md-6">
+										<img src="media/data.webp" class="boxen" alt="Daten symbolisch" draggable="false">
+									</div>
+									<div class="col-md-6">
+										<div class="boxen bottom">
 											<h5>Mich erreichen</h5>
 											<div class="d-grid gap-2">
-												<a href="https://www.linkedin.com/in/oezguen-cakir" class="btn btn-secondary hvr-bounce-to-right" role="button" target="_blank">
+												<a href="https://www.linkedin.com/in/oezguen-cakir" class="btn btn-primary hvr-bounce-to-right" role="button" target="_blank">
 													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
 													LinkedIn
 												</a>
-												<a href="mailto:oezguencakir@outlook.de" class="btn btn-secondary hvr-bounce-to-right" role="button" target="_blank">
+												<a href="mailto:oezguencakir@outlook.de" class="btn btn-primary hvr-bounce-to-right" role="button" target="_blank">
 													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg>
 													E-Mail
-												<a href="https://github.com/OezguenCakir" class="btn btn-secondary hvr-bounce-to-right" role="button" target="_blank">
+												<a href="https://github.com/OezguenCakir" class="btn btn-primary hvr-bounce-to-right" role="button" target="_blank">
 													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
 													GitHub
 												</a>
@@ -508,7 +469,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="boxen bottom light-white arbeitsvertrag" data-bs-toggle="tooltip" data-bs-title="Dieser Bereich hat keine Funktion. Dies dient lediglich als Witz :)">
+							<div class="boxen bottom light-white arbeitsvertrag hvr-shrink">
 								<strong style="color: #AC473E;">Nicht zögern!</strong>
 								<div class="mb-3"><label for="formFile" class="form-label"><h5>Arbeitsvertrag jetzt hochladen</h5></label><input class="form-control" type="file" id="formFile"></div>
 								<button type="submit" class="btn btn-secondary" style="width: 100%;">Hochladen</button>
@@ -517,7 +478,7 @@
 					</div>
 				</div>
 				<div class="foot">
-					<button id="selfDestruction" class="ui-state-default ui-corner-all btn language-toggle" style="width: auto; margin: 0%;" data-bs-toggle="tooltip" data-bs-title="Wie jeder gute Bösewicht habe ich einen Selbstzerstörungsknopf für diese Seite erstellt.">
+					<button id="selfDestruction" class="ui-state-default ui-corner-all btn language-toggle" style="width: auto; margin: 0%;">
 					Selbstzerstörung
 					</button>
 					<hr>Copyright © 2023 Özgün Cakir Enterprises.
