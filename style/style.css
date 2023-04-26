@@ -608,8 +608,12 @@ h6 {
 }
 .popup {
   margin-left: 137.5px;
+  margin-top: calc(100vh - height);
 }
 .transparent-boxen {
   padding: 0px;
   margin-left: 20px;
+}
+.clickable {
+  cursor: pointer;
 }
