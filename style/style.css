@@ -123,8 +123,7 @@ a:any-link {
 .banner {
   min-height: 100vh;
   background-color: var(--grau);
-  /* background-image: url(https://www.xn--zgncakir-m4a6d.de/media/hintergrund.webp); */
-  background-image: url(https://raw.githubusercontent.com/OezguenCakir/Portfolio-Webseite/main/media/hintergrund.webp);
+  background-image: url(https://www.xn--zgncakir-m4a6d.de/media/hintergrund.webp);
   background-position: 100% 100%;
   background-size: 750px;
   background-repeat: no-repeat;
