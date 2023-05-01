@@ -32,8 +32,7 @@ body {
 .backbox,
 .boxen,
 .seiteninhalte,
-.fill,
-.hero-heading {
+.fill {
   border-radius: 32px;
 }
 
@@ -167,11 +166,28 @@ a:any-link {
   max-width: 1300px;
 }
 
-.hero-heading {
-  font-size: 37px;
+.hero-heading,
+.hero-subheading {
   color: var(--weiß);
+  border-radius: 32px;
+  background-color: #39485589;
+  padding: 15px;
+}
+
+.hero-heading {
+  font-size: 38px;
   font: 600;
   margin-top: 40px;
+}
+
+.hero-subheading {
+  margin: 20px 60px 25px 60px;
+  font-size: 22px;
+  line-height: 125%;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  text-transform: none;
+  max-width: 900px;
 }
 
 h1 {
@@ -225,27 +241,6 @@ h6 {
   font-size: 12px;
   line-height: 18px;
   font-weight: 700;
-}
-
-.hero-subheading {
-  margin: 20px 60px 25px 60px;
-  padding: 15px 15px 15px 15px;
-  opacity: 1;
-  outline-color: var(--weiß);
-  outline-offset: 0;
-  outline-style: none;
-  outline-width: 3px;
-  color: var(--weiß);
-  font-size: 22px;
-  line-height: 125%;
-  font-weight: 400;
-  text-align: left;
-  letter-spacing: 0.25px;
-  text-transform: none;
-  text-align: center;
-  background-color: #394855ba;
-  border-radius: 16px;
-  max-width: 1000px;
 }
 
 .logo-section {
