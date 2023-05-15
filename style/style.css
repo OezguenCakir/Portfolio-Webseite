@@ -10,7 +10,7 @@
   --blau-2: #2c4373;
   --blau-3: #006e9d;
   --weiß: #fff;
-  --grau: #394855;
+  --grau: #3D4856;
   --rot: #ac473e;
   --leisten-breite: 275px;
 }
@@ -676,3 +676,25 @@ h6 {
 .clickable {
   cursor: pointer;
 }
+
+.image{
+    border-radius: 50% !important;
+    background-color: #006e9d;
+    /* border: 3px solid #fff; */
+    aspect-ratio: 1;
+    animation: morph 12s infinite;
+}
+
+@keyframes morph {
+    0% { background-color: var(--hintergrund-1); }
+    10% { background-color: var(--hintergrund-2); }
+    20% { background-color: var(--hintergrund-3); }
+    30% { background-color: var(--hintergrund-4); }
+    40% { background-color: var(--hintergrund-5); }
+    50% { background-color: var(--hintergrund-6); }
+    60% { background-color: var(--hintergrund-5); }
+    70% { background-color: var(--hintergrund-4); }
+    80% { background-color: var(--hintergrund-5); }
+    90% { background-color: var(--hintergrund-2); }
+    100% { background-color: var(--hintergrund-1); }
+  }
