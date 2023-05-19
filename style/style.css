@@ -563,7 +563,7 @@ h6 {
   color: var(--weiß);
 }
 
-@media (max-width: 1000px) {
+@media (max-width:1000px) {
   .left-navigation {
     display: none;
     visibility: collapse;
@@ -574,30 +574,9 @@ h6 {
     margin: 20px 10px 25px 10px;
   }
 
-  .boxcontainer-video {
-    margin: 0;
-    margin-bottom: 15px;
-    background-color: #ffffffa0;
-  }
-
-  .boxcontainer-institution {
-    padding-top: 5px;
-  }
-
   .hero-heading {
     background-color: #394855ba;
     padding: 5px;
-  }
-
-  .textbox {
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-
-  .textbox-innen {
-    margin: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
   }
 
   .title-job {
@@ -623,7 +602,7 @@ h6 {
 
   .seiteninhalte {
     margin: 15px 15px;
-    padding: 15px 15px 0px;
+    padding: 15px 15px 0;
   }
 
   .seitentitel {
@@ -636,7 +615,7 @@ h6 {
   }
 }
 
-@media (max-width: 1440px) and (min-width: 1000px) {
+@media (max-width:1440px) and (min-width:1000px) {
   .seiteninhalte {
     margin: 20px 20px;
   }
