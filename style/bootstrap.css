@@ -801,8 +801,8 @@ progress {
   --bs-btn-bg: #006e9d;
   --bs-btn-border-color: #006e9d;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0b5ed7;
-  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-hover-bg: #006e9d;
+  --bs-btn-hover-border-color: #006e9d;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #0a58ca;
@@ -995,7 +995,7 @@ progress {
 .nav-pills {
   --bs-nav-pills-border-radius: 0.75rem;
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #004f7b;
+  --bs-nav-pills-link-active-bg: #9DADBC;
 }
 .nav-pills .nav-link {
   background: 0 0;
