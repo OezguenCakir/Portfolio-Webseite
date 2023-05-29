@@ -29,11 +29,41 @@ body {
   scroll-behavior: smooth;
 }
 
+.hintergrundfarbe-1 {
+  background-color: var(--hintergrund-1);
+}
+
+.hintergrundfarbe-2 {
+  background-color: var(--hintergrund-2);
+}
+
+.hintergrundfarbe-3 {
+  background-color: var(--hintergrund-3);
+}
+
+.hintergrundfarbe-4 {
+  background-color: var(--hintergrund-4);
+}
+
+.hintergrundfarbe-5 {
+  background-color: var(--hintergrund-5);
+}
+
+.hintergrundfarbe-6 {
+  background-color: var(--hintergrund-6);
+}
+
+.lighter-white {
+  background-color: #9dadbca1;
+}
+
 .tab-pane,
 .backbox,
 .boxen,
 .seiteninhalte,
-.fill {
+.fill,
+.hero-heading,
+.hero-subheading {
   border-radius: 32px;
 }
 
@@ -146,9 +176,7 @@ a:any-link {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  margin-right: 40px;
-  margin-left: 40px;
-  margin-bottom: 0;
+  margin: auto;
   padding-top: 40px;
   float: none;
   clear: none;
@@ -169,7 +197,6 @@ a:any-link {
 .hero-heading,
 .hero-subheading {
   color: var(--weiß);
-  border-radius: 32px;
   background-color: #39485589;
   padding: 15px;
 }
@@ -285,7 +312,7 @@ h6 {
   font-size: 32px;
   line-height: 36px;
   font-weight: 700;
-  max-width: 1250px;
+  max-width: 1300px;
   color: var(--weiß);
   display: flex;
   justify-content: center;
@@ -391,7 +418,6 @@ h6 {
 
 .boxen {
   padding: 25px;
-  background-color: #9dadbca1;
   margin-bottom: 20px;
   width: 100%;
   overflow-x: hidden;
@@ -498,34 +524,11 @@ h6 {
 
 .seitentitel-farbe {
   background-color: #00507b4b;
-}
 
-.hintergrundfarbe-1 {
-  background-color: var(--hintergrund-1);
-}
-
-.hintergrundfarbe-2 {
-  background-color: var(--hintergrund-2);
-}
-
-.hintergrundfarbe-3 {
-  background-color: var(--hintergrund-3);
-}
-
-.hintergrundfarbe-4 {
-  background-color: var(--hintergrund-4);
-}
-
-.hintergrundfarbe-5 {
-  background-color: var(--hintergrund-5);
-}
-
-.hintergrundfarbe-6 {
-  background-color: var(--hintergrund-6);
 }
 
 .full-width {
-  width: 100%;
+  width: 100% !important;
 }
 
 .subtitle {
@@ -549,8 +552,12 @@ h6 {
   background-color: #000;
 }
 
+.darker-link {
+  color: #fff !important;
+}
+
 .darker-link:any-link {
-  color: #004f7a;
+  color: #fff !important;
 }
 
 .darker-link:visited {
@@ -643,11 +650,11 @@ h6 {
   }
 
 
-.contact-titel {
-  color: #fff;
+.contact-title {
+  color: var(--grau) !important;
   text-align: center;
   margin-bottom: 15px;
-}
+  font-size: 20px !important;
 
 .certificate-pill {
   /* background-color: transparent !important; */
@@ -688,8 +695,10 @@ h6 {
     padding: 5px;
   }
 
+  .badge,
   .title-job {
-    text-align: center;
+    text-align: center !important;
+    display: block !important;
   }
 
   body {
@@ -715,36 +724,18 @@ h6 {
 
 
 @media (max-width:1000px) {
-  .hero-subheading {
-    margin: 20px 10px 25px 10px;
-  }
-
-  .hero-heading {
-    background-color: #394855ba;
-    padding: 5px;
-  }
-
-  .title-job {
-    display: block; margin: auto;
-  }
-
-  body {
-    padding-left: 0 !important;
-    margin: 0;
-    color: var(--blau-2);
-    background-color: var(--blau-2);
-  }
-
   .boxen {
-    width: 100%;
     margin-block: 10px;
   }
-
-  .seiteninhalte {
-    padding: 15px 15px 0;
+  .bottom-mobile {
+    margin-bottom: 0;
   }
-
-  .seitentitel {
-    margin: 40px 15px 25px;
+  .banner {
+    min-height: calc(100vh - var(--navbar-höhe));
+    background-image: url(https://www.xn--zgncakir-m4a6d.de/media/hintergrund.webp);
+    background-position: 0% 0%;
+    /* background-size: 750px; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
