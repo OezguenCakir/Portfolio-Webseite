@@ -4,6 +4,6 @@ Für Bewerbungen - vor meinem aktuellen Job - hatte ich eine Internetseite für 
 
 Ich wollte aber eine erneuerte Version erarbeiten, weil ich mich mit HTML & CSS auseinandersetzen wollte und mir der ganze Prozess Spaß macht. Die Seite wird über [GitHub Pages](https://pages.github.com) deployed und gehosted.
 
-Als Frontend Toolkit habe ich [Bootstrap](https://getbootstrap.com) genutzt. 
+[Bootstrap](https://getbootstrap.com) habe ich als Frontend-Framework genutzt. Für Bildbearbeitung habe ich Canva genutzt. Um transparente Bilder automatisch passgenau zuzuschneiden, habe ich ein Skript geschrieben und [hier](https://auto-crop-picture.streamlit.app) deployed.
 
 Technisch müsste die Seite weitgehend fertig sein, inhaltlich aber bei Weitem nicht.
