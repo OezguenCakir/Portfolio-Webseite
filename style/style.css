@@ -165,33 +165,13 @@ a:any-link {
 }
 
 .hero-title-wrapper {
-  position: -webkit-sticky;
-  position: sticky;
-  left: 25%;
-  top: 25%;
-  right: 25%;
-  bottom: 25%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  margin: auto;
-  padding-top: 40px;
-  float: none;
-  clear: none;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
   text-align: center;
-  vertical-align: middle;
-  align-items: center;
-  justify-content: center;
-  max-width: 1300px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .hero-heading,
