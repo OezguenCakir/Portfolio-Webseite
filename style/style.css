@@ -1,5 +1,5 @@
 :root {
-  --weiß: #fff;
+--weiß: #fff;
   --grau: #3d4856;
   --rot: #ac473e;
   --selection-color: #00a08e;
@@ -28,7 +28,8 @@ body {
 
 .progress-bar,
 .nav-pills .nav-link.active,
-.btn {
+.btn,
+.language-toggle {
   background-color: var(--accent-color) !important;
   --bs-btn-border-color: var(--accent-color) !important;
 }
@@ -273,6 +274,7 @@ h6 {
   padding: 20px;
   text-align: center;
   background-color: var(--seitentitel-farbe);
+  background-color: var(--bs-tertiary-bg);
   color: var(--third-color);
   border-radius: 24px;
   font-size: 32px;
@@ -379,7 +381,6 @@ h6 {
   text-align: center;
   padding: 20px;
   font-size: small;
-  color: var(--grau);
 }
 
 .boxen {
@@ -445,7 +446,8 @@ h6 {
   padding: 8px 12px;
   --bs-btn-border-width: 0px;
   border: 0;
-  background-color: var(--accent-color);
+  color: var(--bs-emphasis-color);
+  background-color: var(--bs-tertiary-bg) !important;
   text-align: center;
   width: 100%;
 }
@@ -599,9 +601,7 @@ h6 {
   .hero-heading,
   .progress-bar,
   .nav-pills .nav-link.active,
-  .btn,
-  .language-toggle,
-  .language-toggle:hover {
+  .btn {
     background-color: var(--accent-color) !important;
   }
   .progress-bar,
@@ -712,6 +712,15 @@ h6 {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
+  .institution {
+    text-align: center;
+  }
+
+  .badge {
+    width: 78px;
+    margin: auto;
+  }
 }
 
 
@@ -756,4 +765,34 @@ h6 {
 
 .nav-link:hover.active {
   color: var(--bs-secondary-bg) !important;
+}
+
+
+#selfDestruction {
+  background-color: var(--rot) !important;
+  --bs-btn-border-color: var(--rot) !important;
+}
+
+#selfDestruction:hover {
+  background-color: #000 !important;
+}
+
+
+.custom-list li {
+  display: flex;
+  align-items: center;
+}
+
+.custom-list li svg {
+  margin-right: 10px !important;
+}
+
+.custom-list li br + svg {
+  height: 32px !important;
+  width: 32px !important;
+}
+
+.custom-list li br + .bi {
+  height: 32px !important;
+  width: 32px !important;
 }
