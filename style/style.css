@@ -82,6 +82,7 @@ a:any-link {
   height: var(--navbar-höhe);
   width: 100%;
   z-index: 999;
+  color: #fff !important;
 }
 
 .content-nav {
@@ -105,11 +106,6 @@ a:any-link {
 .nav-link:active {
   background-color: var(--bs-emphasis-color) !important;
   font-weight: inherit;
-}
-
-
-.nav-link:hover {
-  color: var(--bs-emphasis-color) !important;
 }
 
 .title {
