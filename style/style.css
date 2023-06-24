@@ -48,8 +48,7 @@ body {
 .boxen,
 .seiteninhalte,
 .fill,
-.hero-heading,
-.hero-subheading {
+.hero-heading {
   border-radius: 32px;
 }
 
@@ -157,8 +156,7 @@ a:any-link {
   transform: translate(-50%, -50%);
 }
 
-.hero-heading,
-.hero-subheading {
+.hero-heading {
   color: var(--weiß);
   padding: 15px;
 }
@@ -167,16 +165,6 @@ a:any-link {
   font-size: 38px;
   font: 600;
   margin-top: 40px;
-}
-
-.hero-subheading {
-  margin: 20px 60px 25px 60px;
-  font-size: 22px;
-  line-height: 125%;
-  font-weight: 400;
-  letter-spacing: 0.25px;
-  text-transform: none;
-  max-width: 900px;
 }
 
 h1 {
@@ -416,16 +404,6 @@ h6 {
   max-width: 50vw;
 }
 
-.accordion {
-  margin-top: 10px;
-}
-
-.accordion-body {
-  text-align: left;
-  font-size: 16px;
-}
-
-.hvr-forward,
 .hvr-shrink {
   width: 100%;
 }
@@ -461,22 +439,8 @@ h6 {
   color: var(--weiß);
 }
 
-.language-switch {
-  margin-top: 25px;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  bottom: 0%;
-  width: 90%;
-  transform: translate(-50%, -50%);
-}
-
 .bottom {
   margin-bottom: 0px;
-}
-
-.vordergrund-farbe {
-  background-color: #00507b4b;
 }
 
 .light-white {
@@ -485,11 +449,6 @@ h6 {
 
 .white {
   background-color: #f0fdec;
-}
-
-.seitentitel-farbe {
-  background-color: #00507b4b;
-
 }
 
 .full-width {
@@ -517,18 +476,9 @@ h6 {
   background-color: #000;
 }
 
-.transparent {
-  background-color: #ffffff1e;
-  color: var(--weiß);
-}
-
 .white-text {
   color: var(--weiß);
 }
-
-
-
-
 
 .arbeitsvertrag {
   cursor: not-allowed;
@@ -542,22 +492,9 @@ h6 {
   background-color: var(--weiß);
 }
 
-.white-font {
-  color: #fff;
-}
-
-.white-font {
-  color: var(--grau);
-}
-
 .popup {
   margin-left: calc(var(--leisten-breite) / 2);
   margin-top: calc(100vh - height);
-}
-
-.transparent-boxen {
-  padding: 0px;
-  margin-left: 20px;
 }
 
 .clickable {
@@ -566,7 +503,6 @@ h6 {
 
 .image {
   border-radius: 50% !important;
-  /* border: 3px solid var(--bs-tertiary-bg); */
   aspect-ratio: 1;
   /* animation: morph 12s infinite; */
 }
@@ -657,10 +593,6 @@ h6 {
     width: 0;
   }
 
-  .hero-subheading {
-    margin: 20px 10px 25px 10px;
-  }
-
   .hero-heading {
     background-color: #394855ba;
     padding: 5px;
@@ -704,7 +636,6 @@ h6 {
     min-height: calc(100vh - var(--navbar-höhe));
     background-image: url(https://www.xn--zgncakir-m4a6d.de/media/hintergrund.webp);
     background-position: 0% 0%;
-    /* background-size: 750px; */
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
@@ -738,7 +669,6 @@ h6 {
 
 
 .nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
-  /* background-color: var(--third-color); */
   color: #000;
   border-radius: 12px;
 }
