@@ -9,8 +9,7 @@
     <meta name="theme-color" content="#234E5A">
     <link rel="icon" sizes="96x96" href="media/favicon-96x96.webp">
     <link rel="stylesheet" href="style/style.css">
-    <!-- <link rel="stylesheet" href="style/bootstrap.css">Latest compiled and modified CSS -->
-    <link rel="stylesheet" href="style/hover-min.css">	
+    <link rel="stylesheet" href="style/hover-min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -23,7 +22,7 @@
 				<a class="navbar-brand" href="#">
 					<img src="media/logo.webp" height="32px" width="32px" alt="ö logo">
 				</a>
-				<a href="#summary" id="summ" class="nav-link">Zusammenfassung</a>
+				<a href="#summary" id="summ" class="nav-link">Start</a>
 				<a href="#job" id="jobs" class="nav-link">Berufliche Laufbahn</a>
 				<a href="#certificate" id="certification" class="nav-link my-1">Zertifikate</a>
 				<a href="#educ" id="education" class="nav-link my-1">Bildungsweg</a>
@@ -55,11 +54,11 @@
 			</div>
 		</div>
 		<div id="summary" class="seite hintergrundfarbe-1">
-			<div class="seitentitel">Zusammenfassung</div>
+			<div class="seitentitel">Start</div>
 			<div class="seiteninhalte">
-				<div class="row align-items-start" >
+				<div class="row align-items-start">
 					<div class="col-md-5">
-						<div class="boxen hvr-shrink clickable" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<div class="boxen hvr-shrink clickable" data-bs-toggle="modal" data-bs-target="#technischModal">
 							<h4 id="techSkills">Technische Fähigkeiten</h4>
 							<div><h5>Excel</h5><div class="progress"><div class="progress-bar" aria-label="Excel" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div></div>
 							<div><h5>PowerBI</h5><div class="progress"><div class="progress-bar" aria-label="PowerBI" role="progressbar" style="width: 85%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div></div>
@@ -105,14 +104,17 @@
 					</div>
 					</div>
 				</div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" style="vertical-align: middle;">
-            <div class="boxen popup">
-              <h5 id="exampleModalLabel">Technische Fähigkeiten</h5>
-              Hi das ist nur ein Wenig Text.
-            </div>
-          </div>
-        </div>
+				<div class="modal fade" id="technischModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg" style="vertical-align: middle;">
+						<div class="boxen popup">
+							<h4 id="exampleModalLabel">Technische Fähigkeiten</h4>
+							<img src="media/powerbi_logo_color.png" width="150px">
+							<br><strong>Woran ich noch arbeiten möchte</strong><br>
+							Ich würde gerne mit Calculation Groups mit Tabular Editor arbeiten
+
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="job" class="seite hintergrundfarbe-2">
@@ -398,7 +400,7 @@
 						<div class="hvr-shrink clickable">
 							<div class="boxen bottom-on-mobile">
 								<h4>Chess.com Profilauswertung</h4>
-								<video width=100% height=100% autoplay loop muted playsinline class="fill hvr-shrink">
+								<video width=100% height=100% autoplay loop muted playsinline class="fill">
 									<source src="media/schach_streamlit.mp4" type="video/mp4">
 								</video>
 								Mit dieser App könnt ihr eine Auswertung meines Profils aus Chess.com ansehen. Ihr könnt aber auch andere Nutzernamen eingeben und euch Auswertungen derer Profile anschauen.
@@ -409,7 +411,7 @@
 						<div class="hvr-shrink clickable">
 							<div class="boxen bottom">
 								<h4>Automatische Bild-Zuschneidung</h4>
-								<video width=100% height=100% autoplay loop muted playsinline class="fill hvr-shrink">
+								<video width=100% height=100% autoplay loop muted playsinline class="fill">
 									<source src="media/autoimgcrop.mp4" type="video/mp4">
 								</video>
 								Du hast transparente Bilder und willst diese auf das Wesentlich zuschneiden und den leeren Rand entfernen? Für diesen Zweck, habe ich diese Seite gebastelt.
@@ -420,20 +422,29 @@
 				<div class="modal fade" id="websiteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg" style="vertical-align: middle;">
 						<div class="boxen popup">
-							<h5 id="exampleModalLabel">Hintergrund meiner Website</h5>
-							<br><strong>Warum eine Webseite?</strong><br>
+							<h4 id="exampleModalLabel">Hintergrund meiner Website</h4>
+							<h5>Warum eine Webseite?</h5>
 							Während meines Praktikums bei Henkel habe ich bereits daran gearbeitet, meinen Lebenslauf zu aktualisieren. 
 							Dabei hatte ich ein paar kleinere Projekte auf die ich verweisen wollte. 
 							Das waren zwei Dashboards auf Tableau, ein zugehöriges Python-Skript und SQL-Dateien für die DataCamp-Zertifizierung. 
 							Das hatte nicht auf den Lebenslauf gepasst, also musste eine alternative Lösung her: eine eigene Webseite.
-							<br><strong>Erste Version</strong><br>
+							<h5>Erste Version</h5>
 							Eine Seite von Grund auf zu schreiben stand für mich nicht zur Frage. 
 							Ich wollte und konnte nicht viel Zeit und Aufmerksamkeit investieren und so musste ein Website-Baukasten herhalten. 
 							In meinem Fall war das Google Sites.
 							<img class="full-width" src="media/google_sites_homepage.png">
-							<br><strong>Motivation zu mehr</strong><br>
+							<h5>Motivation zu mehr</h5>
 							Auf der Arbeit hat mich dann ein Kollege gefragt, wie ich denn die Webseite erstellt hatte. 
 							Die Antwort 'Google Sites' war mir dann doch peinlich. Ich hatte mir eine neue komplett überarbeite Seite zugetraut und hatte Lust daran zu arbeiten.
+							<h5>Lange sah die Seite anders aus</h5>
+							Lange sah die Seite noch viel bunter aus.
+							<img class="full-width" src="media/webseite_001.png">
+							<img class="full-width" src="media/webseite_002.png">
+							Mit der Zeit hatte es mich aber gestört, dass die Inhalte nicht zentriert waren, sondern rechtslastig. Also habe ich an einer Version mit der Navigationsleiste oben gearbeitet.
+							<img class="full-width" src="media/webseite_003.png">
+							Mit der Veröffentlichung von Bootstrap 5.3.0 wurde die Unterstützung für Dark-Modes eingebaut. Die wollte ich dann direkt umsetzen.
+							<img class="full-width" src="media/webseite_004.png">
+							Ich werde vermutlich immer weiter an dieser Seite arbeiten. Ich habe nämlich zu viel Spaß an der Gestaltung.
 						</div>
 					</div>
 				</div>
@@ -505,7 +516,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="boxen hvr-shrink arbeitsvertrag">
+						<div class="boxen hvr-shrink not-clickable">
 							<h4 style="margin-bottom: 20px;">Arbeitsvertrag direkt hochladen</h4>
 							<div class="bottom bottom-mobile">
 								<div class="mb-3">
@@ -534,14 +545,14 @@
 						<div class="boxen">
 							<h4 style="margin-bottom: 20px;">Mich erreichen</h4>
 							<div class="d-grid gap-2">
-								<a href="https://www.linkedin.com/in/oezguen-cakir" class="btn btn-primary hvr-bounce-to-right" role="button" target="_blank">
+								<a href="https://www.linkedin.com/in/oezguen-cakir" class="btn btn-primary" role="button" target="_blank">
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
 									LinkedIn
 								</a>
-								<a href="mailto:oezguencakir@outlook.de" class="btn btn-primary hvr-bounce-to-right" role="button" target="_blank">
+								<a href="mailto:oezguencakir@outlook.de" class="btn btn-primary" role="button" target="_blank">
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg>
 									E-Mail
-								<a href="https://github.com/OezguenCakir" class="btn btn-primary hvr-bounce-to-right" role="button" target="_blank">
+								<a href="https://github.com/OezguenCakir" class="btn btn-primary" role="button" target="_blank">
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
 									GitHub
 								</a>
