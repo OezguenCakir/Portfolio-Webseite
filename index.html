@@ -26,12 +26,7 @@
 				<a href="#job" id="jobs" class="nav-link">Berufliche Laufbahn</a>
 				<a href="#certificate" id="certification" class="nav-link my-1">Zertifikate</a>
 				<a href="#educ" id="education" class="nav-link my-1">Bildungsweg</a>
-				<a href="#portfolio" class="nav-link my-1">Portfolio</a>
 				<a href="#contact" id="contactMe" class="nav-link my-1">Kontakt</a>
-				<a href="#en"  id="langEN" onclick="setTimeout(function(){location.reload();}, 50);" class="nav-link my-1">
-					<img src="media/language.webp" width="16" height="16">
-					EN
-				</a>
 			</nav>
 		</div>
 	</div>
@@ -58,12 +53,12 @@
 			<div class="seiteninhalte">
 				<div class="row align-items-start">
 					<div class="col-md-5">
-						<div class="boxen hvr-shrink clickable" data-bs-toggle="modal" data-bs-target="#technischModal">
-							<h4 id="techSkills">Technische Fähigkeiten</h4>
-							<div><h5>Excel</h5><div class="progress"><div class="progress-bar" aria-label="Excel" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+						<div class="boxen hvr-shrink clickable">
+							<h4 id="techSkills">Technische Fähigkeiten</h4>							
+							<div><h5>SQL</h5><div class="progress"><div class="progress-bar" aria-label="SQL" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div></div>
 							<div><h5>PowerBI</h5><div class="progress"><div class="progress-bar" aria-label="PowerBI" role="progressbar" style="width: 85%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div></div>
-							<div><h5>SQL</h5><div class="progress"><div class="progress-bar" aria-label="SQL" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div></div>
 							<div><h5>Python</h5><div class="progress"><div class="progress-bar" aria-label="Python" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+							<div><h5>Excel</h5><div class="progress"><div class="progress-bar" aria-label="Excel" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div></div></div>
 							<div><h5>HTML & CSS</h5><div class="progress"><div class="progress-bar" aria-label="HTML & CSS" role="progressbar" style="width: 35%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div></div></div>
 						</div>
 						<div class="boxen bottom hvr-shrink">
@@ -88,7 +83,7 @@
 					<div class="col-md-3">
 					<div class="boxen hvr-shrink text-center">
 						<h4>Berufserfahrung</h4>
-						<h5>1 Jahr</h5>
+						<h5 id="years_experience"></h5>
 					</div>
 					<div class="boxen hvr-shrink text-center">
 						<h4>Studium</h4>
@@ -102,17 +97,6 @@
 							<li><strong>Google</strong> - Data Analytics Professional</li>
 						</ul>
 					</div>
-					</div>
-				</div>
-				<div class="modal fade" id="technischModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-lg" style="vertical-align: middle;">
-						<div class="boxen popup">
-							<h4 id="exampleModalLabel">Technische Fähigkeiten</h4>
-							<img src="media/powerbi_logo_color.png" width="150px">
-							<br><strong>Woran ich noch arbeiten möchte</strong><br>
-							Ich würde gerne mit Calculation Groups mit Tabular Editor arbeiten
-
-						</div>
 					</div>
 				</div>
 			</div>
@@ -381,99 +365,6 @@
 				</div>
 			</div>
 		</div>
-		<div id="portfolio" class="seite hintergrundfarbe-5">
-			<div class="seitentitel">Portfolio</div>
-			<div class="seiteninhalte">
-				<div class="row">
-					<div class="col-md-6" data-bs-toggle="modal" data-bs-target="#websiteModal">
-						<div class="hvr-shrink clickable">
-							<div class="boxen bottom-on-mobile">
-								<h4>Meine Webseite</h4>
-								<video width=100% height=100% autoplay loop muted playsinline class="fill">
-									<source src="media/meine_seite.mp4" type="video/mp4">
-								</video>
-								Vielleicht ein wenig rekursiv, aber die ganze Arbeit soll sich ja lohnen. Web-Developer werde ich wohl nicht, aber das Ganze hat doch Spaß gemacht, Data Analytics aber halt deutlich mehr.
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6" data-bs-toggle="modal" data-bs-target="#chesscomModal">
-						<div class="hvr-shrink clickable">
-							<div class="boxen bottom-on-mobile">
-								<h4>Chess.com Profilauswertung</h4>
-								<video width=100% height=100% autoplay loop muted playsinline class="fill">
-									<source src="media/schach_streamlit.mp4" type="video/mp4">
-								</video>
-								Mit dieser App könnt ihr eine Auswertung meines Profils aus Chess.com ansehen. Ihr könnt aber auch andere Nutzernamen eingeben und euch Auswertungen derer Profile anschauen.
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6" data-bs-toggle="modal" data-bs-target="#autoimgcropModal">
-						<div class="hvr-shrink clickable">
-							<div class="boxen bottom">
-								<h4>Automatische Bild-Zuschneidung</h4>
-								<video width=100% height=100% autoplay loop muted playsinline class="fill">
-									<source src="media/autoimgcrop.mp4" type="video/mp4">
-								</video>
-								Du hast transparente Bilder und willst diese auf das Wesentlich zuschneiden und den leeren Rand entfernen? Für diesen Zweck, habe ich diese Seite gebastelt.
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal fade" id="websiteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-lg" style="vertical-align: middle;">
-						<div class="boxen popup">
-							<h4 id="exampleModalLabel">Hintergrund meiner Website</h4>
-							<h5>Warum eine Webseite?</h5>
-							Während meines Praktikums bei Henkel habe ich bereits daran gearbeitet, meinen Lebenslauf zu aktualisieren. 
-							Dabei hatte ich ein paar kleinere Projekte auf die ich verweisen wollte. 
-							Das waren zwei Dashboards auf Tableau, ein zugehöriges Python-Skript und SQL-Dateien für die DataCamp-Zertifizierung. 
-							Das hatte nicht auf den Lebenslauf gepasst, also musste eine alternative Lösung her: eine eigene Webseite.
-							<h5>Erste Version</h5>
-							Eine Seite von Grund auf zu schreiben stand für mich nicht zur Frage. 
-							Ich wollte und konnte nicht viel Zeit und Aufmerksamkeit investieren und so musste ein Website-Baukasten herhalten. 
-							In meinem Fall war das Google Sites.
-							<img class="full-width" src="media/google_sites_homepage.png">
-							<h5>Motivation zu mehr</h5>
-							Auf der Arbeit hat mich dann ein Kollege gefragt, wie ich denn die Webseite erstellt hatte. 
-							Die Antwort 'Google Sites' war mir dann doch peinlich. Ich hatte mir eine neue komplett überarbeite Seite zugetraut und hatte Lust daran zu arbeiten.
-							<h5>Lange sah die Seite anders aus</h5>
-							Lange sah die Seite noch viel bunter aus.
-							<img class="full-width" src="media/webseite_001.png">
-							<img class="full-width" src="media/webseite_002.png">
-							Mit der Zeit hatte es mich aber gestört, dass die Inhalte nicht zentriert waren, sondern rechtslastig. Also habe ich an einer Version mit der Navigationsleiste oben gearbeitet.
-							<img class="full-width" src="media/webseite_003.png">
-							Mit der Veröffentlichung von Bootstrap 5.3.0 wurde die Unterstützung für Dark-Modes eingebaut. Die wollte ich dann direkt umsetzen.
-							<img class="full-width" src="media/webseite_004.png">
-							Ich werde vermutlich immer weiter an dieser Seite arbeiten. Ich habe nämlich zu viel Spaß an der Gestaltung.
-						</div>
-					</div>
-				</div>
-				<div class="modal fade" id="chesscomModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-lg" style="vertical-align: middle;">
-						<div class="boxen popup">
-							<h5 id="exampleModalLabel">Chess.com</h5>
-							<br><strong>Warum eine Webseite?</strong><br>
-							Während meines Praktikums bei Henkel habe ich bereits daran gearbeitet, meinen Lebenslauf zu aktualisieren. 
-						</div>
-					</div>
-				</div>
-				<div class="modal fade" id="autoimgcropModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-lg" style="vertical-align: middle;">
-						<div class="boxen popup">
-							<h5 id="exampleModalLabel">Automatische Bildzuschneidung</h5>
-							<br><strong>Zweck dieser Seite</strong><br>
-							Während der Arbeit an dieser Seite hatte ich häufiger mit transparenten Bildern zu tun. Dabei gab es so ziemlich immer einen leeren Rand, den ich perfekte rausschneiden möchte. 
-							<br>Ich habe nach einer Internetseite dafür gesucht, aber als ich auf der zweiten Seite von Google angekommen war, dachte ich mir, dass ich das doch auch selbst kurz machen kann.
-							<img class="full-width" src="media/autoimgcrop_homepage.png">
-							72 Zeilen reichen aus um die App mit Streamlit zu bauen, die ich selbst schon häufiger benutzt habe.
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-								<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-							</svg>
-							<a href="https://github.com/OezguenCakir/Auto-Image-Crop">Repository</a>
-						</div>
-					</div>
-				</div>
-		</div>
 		<div id="contact" class="seite hintergrundfarbe-6">
 			<div class="seitentitel">Kontakt</div>
 			<div class="seiteninhalte">
@@ -511,7 +402,7 @@
 									</li>
 									<li>
 										<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill=#AC473E class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16" style="margin: 10px;"><path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
-										Ich würde das Gehaltsgefüge sprengen &#128553;
+										Ich würde das Gehaltsgefüge sprengen
 									</li>
 								</ul>
 							</div>
@@ -522,7 +413,7 @@
 								<div class="mb-3">
 									<input class="form-control" type="file" id="formFile" type="file" aria-label="Arbeitsvertrag">
 								</div>
-								<button type="submit" class="btn btn-secondary" style="width: 100%;">Hochladen</button>
+								<button type="submit" class="btn btn-secondary disabled" style="width: 100%;">Hochladen</button>
 							</div>
 						</div>
 					</div>
@@ -538,7 +429,7 @@
 							<div class="modal-dialog" style="vertical-align: middle;">
 								<div class="boxen popup">
 									<h5 id="exampleModalLabel">Mein Lebenslauf</h5>
-									Hier zu meinem Lebenslauf
+									folgt irgendwann
 							</div>
 						</div>
 						  </div>
@@ -570,6 +461,7 @@
 		</div>
 	</div>
 	<script src="scripts/typewriter_effect.js" type="text/javascript"></script>
+	<script src="scripts/utils.js" type="text/javascript"></script>
 	<script src="scripts/progress_bar_animation.js" type="text/javascript" defer></script>
 	<script src="scripts/selfdestruction.js" type="text/javascript"></script>
 	<script src="scripts/content.js" type="text/javascript"></script>
