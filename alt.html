@@ -9,6 +9,7 @@
     <meta name="theme-color" content="#234E5A">
     <link rel="icon" sizes="96x96" href="media/favicon-96x96.webp">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/utils.css">
     <link rel="stylesheet" href="style/hover-min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -16,7 +17,7 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   </head>
   <body>	
-    <div class="left-navigation" data-collapse="medium" data-animation="default" data-duration="400" data-no-scroll="1" data-easing="ease" data-easing2="ease" role="banner">
+    <div class="navigation-bar" data-collapse="medium" data-animation="default" data-duration="400" data-no-scroll="1" data-easing="ease" data-easing2="ease" role="banner">
 	  	<div class="content-nav">
 			<nav class="navbar nav-pills d-flex justify-content-center">
 				<a class="navbar-brand" href="#">
@@ -26,7 +27,12 @@
 				<a href="#job" id="jobs" class="nav-link">Berufliche Laufbahn</a>
 				<a href="#certificate" id="certification" class="nav-link my-1">Zertifikate</a>
 				<a href="#educ" id="education" class="nav-link my-1">Bildungsweg</a>
+				<a href="#portfolio" class="nav-link my-1">Portfolio</a>
 				<a href="#contact" id="contactMe" class="nav-link my-1">Kontakt</a>
+				<a href="#en"  id="langEN" onclick="setTimeout(function(){location.reload();}, 50);" class="nav-link my-1">
+					<img src="media/language.webp" width="16" height="16">
+					EN
+				</a>
 			</nav>
 		</div>
 	</div>
@@ -53,26 +59,26 @@
 			<div class="seiteninhalte">
 				<div class="row align-items-start">
 					<div class="col-md-5">
-						<div class="boxen hvr-shrink clickable">
-							<h4 id="techSkills">Technische Fähigkeiten</h4>							
-							<div><h5>SQL</h5><div class="progress"><div class="progress-bar" aria-label="SQL" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+						<div class="boxen hvr-shrink clickable" data-bs-toggle="modal" data-bs-target="#technischModal">
+							<h4 id="techSkills">Technische Fähigkeiten</h4>
+							<a href="skills.html">my link</a>
+							<div><h5>Excel</h5><div class="progress"><div class="progress-bar" aria-label="Excel" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div></div>
 							<div><h5>PowerBI</h5><div class="progress"><div class="progress-bar" aria-label="PowerBI" role="progressbar" style="width: 85%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+							<div><h5>SQL</h5><div class="progress"><div class="progress-bar" aria-label="SQL" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div></div>
 							<div><h5>Python</h5><div class="progress"><div class="progress-bar" aria-label="Python" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div></div></div>
-							<div><h5>Excel</h5><div class="progress"><div class="progress-bar" aria-label="Excel" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div></div></div>
 							<div><h5>HTML & CSS</h5><div class="progress"><div class="progress-bar" aria-label="HTML & CSS" role="progressbar" style="width: 35%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div></div></div>
 						</div>
 						<div class="boxen bottom hvr-shrink">
-							<h6 id="MailList">Schreibe mir an eine meiner E-Mail-Adressen:</h6>
-							<a href="mailto:kontakt@özgüncakir.de" class="typewrite" data-period="2000" data-type='[ "kontakt@özgüncakir.de", "fanpost@özgüncakir.de", "liebesbriefe@özgüncakir.de" ]' ><span class="wrap"></span></a>
+							<h4>Zertifikate</h4>
+							<ul class="list-group-flush">
+								<li><strong>DataCamp</strong> - Data Analyst Professional</li>
+								<li><strong>ExcelHero</strong> - Excel Kurs Komplettpaket</li>
+								<li><strong>Google</strong> - Data Analytics Professional</li>
+							</ul>
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="boxen hvr-shrink">
-							<h4>Soft-Skills</h4>
-							<h5>Humor</h5><div class="progress"><div class="progress-bar" aria-label="Humor" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
-							<h5>Kreativität</h5><div class="progress"><div class="progress-bar" aria-label="Kreativität" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div>
-							<h5>Tipp-Geschwindigkeit</h5><div class="progress"><div class="progress-bar" aria-label="Tipp-Geschwindigkeit" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div></div>
-						</div>
+
 						<div class="boxen bottom hvr-shrink">
 							<h4>Sprachen</h4>
 							<h5>Deutsch</h5><div class="progress"><div class="progress-bar" aria-label="Deutsch" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
@@ -89,14 +95,18 @@
 						<h4>Studium</h4>
 						<h5>BWL B.Sc.</h5>
 					</div>
-					<div class="boxen bottom hvr-shrink">
-						<h4>Zertifikate</h4>
-						<ul class="list-group-flush">
-							<li><strong>DataCamp</strong> - Data Analyst Professional</li>
-							<li><strong>ExcelHero</strong> - Excel Kurs Komplettpaket</li>
-							<li><strong>Google</strong> - Data Analytics Professional</li>
-						</ul>
+
 					</div>
+				</div>
+				<div class="modal fade" id="technischModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg" style="vertical-align: middle;">
+						<div class="boxen popup">
+							<h4 id="exampleModalLabel">Technische Fähigkeiten</h4>
+							<img src="media/powerbi_logo_color.png" width="150px">
+							<br><strong>Woran ich noch arbeiten möchte</strong><br>
+							Ich würde gerne mit Calculation Groups mit Tabular Editor arbeiten
+
+						</div>
 					</div>
 				</div>
 			</div>
@@ -206,8 +216,16 @@
 												etwa 2 Monate
 											</li>
 											<li class="list-group-item">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16"><path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/></svg>
+												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+													<path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+												</svg>
 												Python, SQL
+											</li>
+											<li class="list-group-item">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+													<path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+												</svg>
+												DataCamp
 											</li>
 										</ul>
 										<button onclick="window.location.href='https://www.datacamp.com/certificate/DA0019920646026';" class="language-toggle" style="width: 100%; margin: 0%;">zur Zertifizierung</button>
@@ -365,6 +383,99 @@
 				</div>
 			</div>
 		</div>
+		<div id="portfolio" class="seite hintergrundfarbe-5">
+			<div class="seitentitel">Portfolio</div>
+			<div class="seiteninhalte">
+				<div class="row">
+					<div class="col-md-6" data-bs-toggle="modal" data-bs-target="#websiteModal">
+						<div class="hvr-shrink clickable">
+							<div class="boxen bottom-on-mobile">
+								<h4>Meine Webseite</h4>
+								<video width=100% height=100% autoplay loop muted playsinline class="fill">
+									<source src="media/meine_seite.mp4" type="video/mp4">
+								</video>
+								Vielleicht ein wenig rekursiv, aber die ganze Arbeit soll sich ja lohnen. Web-Developer werde ich wohl nicht, aber das Ganze hat doch Spaß gemacht, Data Analytics aber halt deutlich mehr.
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6" data-bs-toggle="modal" data-bs-target="#chesscomModal">
+						<div class="hvr-shrink clickable">
+							<div class="boxen bottom-on-mobile">
+								<h4>Chess.com Profilauswertung</h4>
+								<video width=100% height=100% autoplay loop muted playsinline class="fill">
+									<source src="media/schach_streamlit.mp4" type="video/mp4">
+								</video>
+								Mit dieser App könnt ihr eine Auswertung meines Profils aus Chess.com ansehen. Ihr könnt aber auch andere Nutzernamen eingeben und euch Auswertungen derer Profile anschauen.
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6" data-bs-toggle="modal" data-bs-target="#autoimgcropModal">
+						<div class="hvr-shrink clickable">
+							<div class="boxen bottom">
+								<h4>Automatische Bild-Zuschneidung</h4>
+								<video width=100% height=100% autoplay loop muted playsinline class="fill">
+									<source src="media/autoimgcrop.mp4" type="video/mp4">
+								</video>
+								Du hast transparente Bilder und willst diese auf das Wesentlich zuschneiden und den leeren Rand entfernen? Für diesen Zweck, habe ich diese Seite gebastelt.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="websiteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg" style="vertical-align: middle;">
+						<div class="boxen popup">
+							<h3 id="exampleModalLabel">Hintergrund meiner Website</h3>
+							<h4>Warum eine Webseite?</h4>
+							Während meines Praktikums bei Henkel habe ich bereits daran gearbeitet, meinen Lebenslauf zu aktualisieren. 
+							Dabei hatte ich ein paar kleinere Projekte auf die ich verweisen wollte. 
+							Das waren zwei Dashboards auf Tableau, ein zugehöriges Python-Skript und SQL-Dateien für die DataCamp-Zertifizierung. 
+							Das hatte nicht auf den Lebenslauf gepasst, also musste eine alternative Lösung her: eine eigene Webseite.
+							<h4>Erste Version</h4>
+							Eine Seite von Grund auf zu schreiben stand für mich nicht zur Frage. 
+							Ich wollte und konnte nicht viel Zeit und Aufmerksamkeit investieren und so musste ein Website-Baukasten herhalten. 
+							In meinem Fall war das Google Sites.
+							<img class="full-width" src="media/google_sites_homepage.png">
+							<h4>Motivation zu mehr</h4>
+							Auf der Arbeit hat mich dann ein Kollege gefragt, wie ich denn die Webseite erstellt hatte. 
+							Die Antwort 'Google Sites' war mir dann doch peinlich. Ich hatte mir eine neue komplett überarbeite Seite zugetraut und hatte Lust daran zu arbeiten.
+							<h4>Lange sah die Seite anders aus</h4>
+							Lange sah die Seite noch viel bunter aus.
+							<img class="full-width" src="media/webseite_001.png">
+							<img class="full-width" src="media/webseite_002.png">
+							Mit der Zeit hatte es mich aber gestört, dass die Inhalte nicht zentriert waren, sondern rechtslastig. Also habe ich an einer Version mit der Navigationsleiste oben gearbeitet.
+							<img class="full-width" src="media/webseite_003.png">
+							Mit der Veröffentlichung von Bootstrap 5.3.0 wurde die Unterstützung für Dark-Modes eingebaut. Die wollte ich dann direkt umsetzen.
+							<img class="full-width" src="media/webseite_004.png">
+							Ich werde vermutlich immer weiter an dieser Seite arbeiten. Ich habe nämlich zu viel Spaß an der Gestaltung.
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="chesscomModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg" style="vertical-align: middle;">
+						<div class="boxen popup">
+							<h5 id="exampleModalLabel">Chess.com</h5>
+							<br><strong>Warum eine Webseite?</strong><br>
+							Während meines Praktikums bei Henkel habe ich bereits daran gearbeitet, meinen Lebenslauf zu aktualisieren. 
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="autoimgcropModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg" style="vertical-align: middle;">
+						<div class="boxen popup">
+							<h5 id="exampleModalLabel">Automatische Bildzuschneidung</h5>
+							<br><strong>Zweck dieser Seite</strong><br>
+							Während der Arbeit an dieser Seite hatte ich häufiger mit transparenten Bildern zu tun. Dabei gab es so ziemlich immer einen leeren Rand, den ich perfekte rausschneiden möchte. 
+							<br>Ich habe nach einer Internetseite dafür gesucht, aber als ich auf der zweiten Seite von Google angekommen war, dachte ich mir, dass ich das doch auch selbst kurz machen kann.
+							<img class="full-width" src="media/autoimgcrop_homepage.png">
+							72 Zeilen reichen aus um die App mit Streamlit zu bauen, die ich selbst schon häufiger benutzt habe.
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+								<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+							</svg>
+							<a href="https://github.com/OezguenCakir/Auto-Image-Crop">Repository</a>
+						</div>
+					</div>
+				</div>
+		</div>
 		<div id="contact" class="seite hintergrundfarbe-6">
 			<div class="seitentitel">Kontakt</div>
 			<div class="seiteninhalte">
@@ -402,7 +513,7 @@
 									</li>
 									<li>
 										<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill=#AC473E class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16" style="margin: 10px;"><path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
-										Ich würde das Gehaltsgefüge sprengen
+										Ich würde das Gehaltsgefüge sprengen &#128553;
 									</li>
 								</ul>
 							</div>
@@ -413,11 +524,15 @@
 								<div class="mb-3">
 									<input class="form-control" type="file" id="formFile" type="file" aria-label="Arbeitsvertrag">
 								</div>
-								<button type="submit" class="btn btn-secondary disabled" style="width: 100%;">Hochladen</button>
+								<button type="submit" class="btn btn-secondary" style="width: 100%;">Hochladen</button>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-5">
+						<div class="boxen hvr-shrink">
+							<h6 id="MailList">Schreibe mir an eine meiner E-Mail-Adressen:</h6>
+							<a href="mailto:kontakt@özgüncakir.de" class="typewrite" data-period="2000" data-type='[ "kontakt@özgüncakir.de", "fanpost@özgüncakir.de", "liebesbriefe@özgüncakir.de" ]' ><span class="wrap"></span></a>
+						</div>
 						<div class="boxen hvr-shrink">
 							<img src="media/contactpic.webp" alt="Symbolbild" draggable="false" width="100%" style="border-radius: 32px;">
 						</div>
@@ -429,7 +544,7 @@
 							<div class="modal-dialog" style="vertical-align: middle;">
 								<div class="boxen popup">
 									<h5 id="exampleModalLabel">Mein Lebenslauf</h5>
-									folgt irgendwann
+									Hier zu meinem Lebenslauf
 							</div>
 						</div>
 						  </div>
@@ -457,7 +572,6 @@
 				Selbstzerstörung
 				</button>
 				<hr>Copyright © 2023 Özgün Cakir Enterprises.
-				<a href="wohnungssuche.html">Wohnungssuche</a>
 			</div>
 		</div>
 	</div>
